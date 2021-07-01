@@ -1,0 +1,7 @@
+{
+  "name": "medviews2021",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
