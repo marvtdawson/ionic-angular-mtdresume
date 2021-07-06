@@ -16,6 +16,14 @@ const routes: Routes = [
         loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
       {
+        path: 'patients',
+        loadChildren: () => import('../patients/patients.module').then( m => m.PatientsPageModule)
+      },
+      {
+        path: 'physicians',
+        loadChildren: () => import('../physicians/physicians.module').then( m => m.PhysiciansPageModule)
+      },
+      {
         path: 'tabs',
         loadChildren: () => import('../../tabs/tabs.module').then(m => m.TabsPageModule),
         children: [
@@ -40,42 +48,42 @@ const routes: Routes = [
       },
       {
         path: 'contact',
-        loadChildren: () => import('../../pages/contact/contact.module').then(m => m.ContactPageModule)
+        loadChildren: () => import('../contact/contact.module').then(m => m.ContactPageModule)
       },{
         path: 'subscribe',
-        loadChildren: () => import('../../pages/subscribe/subscribe.module').then(m => m.SubscribePageModule)
+        loadChildren: () => import('../subscribe/subscribe.module').then(m => m.SubscribePageModule)
       },
       {
         path: 'blog',
-        loadChildren: () => import('../../pages/blog/blog.module').then(m => m.BlogPageModule)
+        loadChildren: () => import('../blog/blog.module').then(m => m.BlogPageModule)
       },
       {
         path: 'mobile-app',
-        loadChildren: () => import('../../pages/mobile-app/mobile-app.module').then(m => m.MobileAppPageModule)
+        loadChildren: () => import('../mobile-app/mobile-app.module').then(m => m.MobileAppPageModule)
       },
       {
         path: 'terms-conditions',
-        loadChildren: () => import('../../pages/terms-conditions/terms-conditions.module').then(m => m.TermsConditionsPageModule)
+        loadChildren: () => import('../terms-conditions/terms-conditions.module').then(m => m.TermsConditionsPageModule)
       },
       {
         path: 'private-policy',
-        loadChildren: () => import('../../pages/private-policy/private-policy.module').then(m => m.PrivatePolicyPageModule)
+        loadChildren: () => import('../private-policy/private-policy.module').then(m => m.PrivatePolicyPageModule)
       },
       {
         path: 'login',
-        loadChildren: () => import('../../pages/login/login.module').then(m => m.LoginPageModule)
+        loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
       },
       {
         path: 'logout',
-        loadChildren: () => import('../../pages/logout/logout.module').then(m => m.LogoutPageModule)
+        loadChildren: () => import('../logout/logout.module').then(m => m.LogoutPageModule)
       },
       {
         path: 'page-not-found',
-        loadChildren: () => import('../../pages/page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
+        loadChildren: () => import('../page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
       },
       {
         path: '**',
-        loadChildren: () => import('../../pages/page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
+        loadChildren: () => import('../page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
       }
     ]
   }
