@@ -1,8 +1,8 @@
 {
   "name": "medviews2021",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "MedEviews",
+  "homepage": "https://medeviews.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
