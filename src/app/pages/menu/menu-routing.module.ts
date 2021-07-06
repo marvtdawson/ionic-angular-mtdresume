@@ -13,6 +13,11 @@ const routes: Routes = [
     loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'tabs',
+    loadChildren: () => import('../../tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+
+  {
     path: 'login',
     loadChildren: () => import('../../pages/login/login.module').then( m => m.LoginPageModule)
   },
@@ -31,6 +36,22 @@ const routes: Routes = [
   {
     path: 'blog',
     loadChildren: () => import('../../pages/blog/blog.module').then( m => m.BlogPageModule)
+  },
+  {
+    path: 'mobile-app',
+    loadChildren: () => import('../../pages/mobile-app/mobile-app.module').then( m => m.MobileAppPageModule)
+  },
+  {
+    path: 'terms-conditions',
+    loadChildren: () => import('../../pages/terms-conditions/terms-conditions.module').then( m => m.TermsConditionsPageModule)
+  },
+  {
+    path: 'private-policy',
+    loadChildren: () => import('../../pages/private-policy/private-policy.module').then( m => m.PrivatePolicyPageModule)
+  },
+  {
+    path: 'page-not-found',
+    loadChildren: () => import('../../pages/page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
   }
 ];
 
