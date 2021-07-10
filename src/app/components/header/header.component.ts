@@ -17,15 +17,15 @@ export class HeaderComponent implements OnInit {
   isUserLoggedIn$: Observable<boolean>;
   displayName$: any;
 
-  @ViewChild('eventsBtn', {read: ElementRef}) eventBtn: ElementRef;
-  @ViewChild('accountBtn', {read: ElementRef}) accountBtn: ElementRef;
+ //  @ViewChild('eventsBtn', {read: ElementRef}) eventBtn: ElementRef;
+ // @ViewChild('accountBtn', {read: ElementRef}) accountBtn: ElementRef;
 
   constructor(private siteData: SiteDataService) {
   }
 
   ngOnInit() {}
 
-  hideDropdown(event) {
+ /* hideDropdown(event) {
     const xTouch = event.clientX;
     const yTouch = event.clientY;
 
@@ -37,6 +37,6 @@ export class HeaderComponent implements OnInit {
     if(xTouch < leftBoundary || xTouch > rightBoundary || yTouch < topBoundary) {
       this.dropdown = false;
     }
-  }
+  }*/
 
 }

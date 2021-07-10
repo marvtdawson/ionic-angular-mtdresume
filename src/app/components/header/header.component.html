@@ -49,15 +49,15 @@
   <ion-col size="2"></ion-col>
   <ion-col size="7">
     <div class="header__nav-wrapper">
-      <ion-button fill="clear" color="dark" [routerLink]="['/performances']"
+      <ion-button fill="clear" color="dark" [routerLink]="['/physicians']"
                   routerLinkActive="active-item"
-                  [routerLinkActiveOptions]="{exact: true}">Performances
+                  [routerLinkActiveOptions]="{exact: true}">Physicians
       </ion-button>
-      <ion-button fill="clear" color="dark" [routerLink]="['/features']"
+      <ion-button fill="clear" color="dark" [routerLink]="['/patients']"
                   routerLinkActive="active-item"
-                  [routerLinkActiveOptions]="{exact: true}">Features
+                  [routerLinkActiveOptions]="{exact: true}">Patients
       </ion-button>
-      <ion-button #eventsBtn (mouseenter)="dropdown=true" (mouseleave)="hideDropdown($event)"
+      <!--<ion-button #eventsBtn (mouseenter)="dropdown=true" (mouseleave)="hideDropdown($event)"
                   fill="clear" color="dark" class="dropdown-btn"
                   [routerLink]="['/events']"
                   routerDirection="root"
@@ -77,11 +77,11 @@
                   lines="none" routerDirection="root">
           Previous
         </ion-item>
-      </div>
+      </div>-->
 
-      <ion-button fill="clear" color="dark" [routerLink]="['/pricing']"
+      <ion-button fill="clear" color="dark" [routerLink]="['/blog']"
                   routerLinkActive="active-item"
-                  [routerLinkActiveOptions]="{exact: true}">Pricing
+                  [routerLinkActiveOptions]="{exact: true}">Blog
       </ion-button>
       <ion-button fill="clear" color="dark" [routerLink]="['/cart']"
                   routerLinkActive="active-item"

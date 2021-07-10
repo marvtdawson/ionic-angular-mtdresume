@@ -50,6 +50,6 @@ export class MenuPage implements OnInit {
   ngOnInit() {
   }
 
-  setTitle() {}
+  setTitle(title) {}
 
 }
