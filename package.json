@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "MedEviews",
   "homepage": "https://medeviews.com/",
+  "description": "The MedEviews Site",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -58,6 +59,5 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "typescript": "~4.2.4"
-  },
-  "description": "An Ionic project"
+  }
 }
