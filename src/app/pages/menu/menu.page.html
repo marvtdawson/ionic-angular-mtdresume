@@ -20,4 +20,14 @@
   </ion-content>
 </ion-menu>
 <app-header></app-header>
-<ion-router-outlet id="main"></ion-router-outlet>
+<ion-content>
+<ion-card class="main-card">
+  <ion-card-header>
+    <ion-card-title>{{ pageTitle }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+<app-footer></app-footer>

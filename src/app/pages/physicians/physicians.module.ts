@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { PhysiciansPageRoutingModule } from './physicians-routing.module';
 
 import { PhysiciansPage } from './physicians.page';
+import {SharedComponentsModule} from "../../components/shared-components/shared-components.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    PhysiciansPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        PhysiciansPageRoutingModule,
+        SharedComponentsModule
+    ],
   declarations: [PhysiciansPage]
 })
 export class PhysiciansPageModule {}

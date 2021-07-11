@@ -8,7 +8,7 @@
       <ion-button>
         <a [routerLink]="['/home']">
           <ion-img class="mobile-header__logo-img" [src]="appLogo"
-                   alt="Live Sync Logo">
+                   alt="MedEviews Logo">
           </ion-img>
         </a>
       </ion-button>
@@ -31,16 +31,16 @@
         <div class="header__logo-text-wrapper__logo">
           <a [routerLink]="['/home']">
             <ion-img [src]="appLogo"
-                     alt="Live Sync Logo">
+                     alt="MedEviews Logo">
             </ion-img>
           </a>
         </div>
 
-        <div class="header__logo-text-wrapper__text">
+        <!--div class="header__logo-text-wrapper__text">
           <a [routerLink]="['/home']">
-            {{ appName | uppercase }}
+            {{ appName }}
           </a>
-        </div>
+        </div-->
 
       </ion-title>
     </div>
@@ -83,10 +83,10 @@
                   routerLinkActive="active-item"
                   [routerLinkActiveOptions]="{exact: true}">Blog
       </ion-button>
-      <ion-button fill="clear" color="dark" [routerLink]="['/cart']"
+      <!--<ion-button fill="clear" color="dark" [routerLink]="['/cart']"
                   routerLinkActive="active-item"
                   [routerLinkActiveOptions]="{exact: true}">Cart
-      </ion-button>
+      </ion-button>-->
 
       <ion-button #accountBtn (mouseenter)="accountDropDown=true" (mouseleave)="hideDropdown($event)"
                   fill="clear" color="dark" class="dropdown-btn"

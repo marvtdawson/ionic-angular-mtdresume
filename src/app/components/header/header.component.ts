@@ -18,18 +18,18 @@ export class HeaderComponent implements OnInit {
   displayName$: any;
 
  //  @ViewChild('eventsBtn', {read: ElementRef}) eventBtn: ElementRef;
- // @ViewChild('accountBtn', {read: ElementRef}) accountBtn: ElementRef;
+ @ViewChild('accountBtn', {read: ElementRef}) accountBtn: ElementRef;
 
   constructor(private siteData: SiteDataService) {
   }
 
   ngOnInit() {}
 
- /* hideDropdown(event) {
+  hideDropdown(event) {
     const xTouch = event.clientX;
     const yTouch = event.clientY;
 
-    const rect = this.eventBtn.nativeElement.getBoundingClientRect();
+    const rect = this.accountBtn.nativeElement.getBoundingClientRect();
     const topBoundary = rect.top + 2;
     const leftBoundary = rect.top + 2;
     const rightBoundary = rect.top + 2;
@@ -37,6 +37,6 @@ export class HeaderComponent implements OnInit {
     if(xTouch < leftBoundary || xTouch > rightBoundary || yTouch < topBoundary) {
       this.dropdown = false;
     }
-  }*/
+  }
 
 }
