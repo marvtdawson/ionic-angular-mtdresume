@@ -78,6 +78,10 @@ const routes: Routes = [
         loadChildren: () => import('../logout/logout.module').then(m => m.LogoutPageModule)
       },
       {
+        path: 'admin',
+        loadChildren: () => import('../../admin/admin.module').then( m => m.AdminPageModule)
+      },
+      {
         path: 'page-not-found',
         loadChildren: () => import('../page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
       },
