@@ -49,6 +49,10 @@
   <ion-col size="2"></ion-col>
   <ion-col size="7">
     <div class="header__nav-wrapper">
+      <ion-button fill="clear" color="dark" [routerLink]="['/reviews']"
+                  routerLinkActive="active-item"
+                  [routerLinkActiveOptions]="{exact: true}">Reviews
+      </ion-button>
       <ion-button fill="clear" color="dark" [routerLink]="['/physicians']"
                   routerLinkActive="active-item"
                   [routerLinkActiveOptions]="{exact: true}">Physicians

@@ -58,6 +58,10 @@ const routes: Routes = [
         loadChildren: () => import('../blog/blog.module').then(m => m.BlogPageModule)
       },
       {
+        path: 'reviews',
+        loadChildren: () => import('../reviews/reviews.module').then( m => m.ReviewsPageModule)
+      },
+      {
         path: 'mobile-app',
         loadChildren: () => import('../mobile-app/mobile-app.module').then(m => m.MobileAppPageModule)
       },
