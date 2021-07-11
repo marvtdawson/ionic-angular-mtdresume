@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MobileAppPage implements OnInit {
 
+  pageTitle = 'Mobile Page';
   constructor() { }
 
   ngOnInit() {

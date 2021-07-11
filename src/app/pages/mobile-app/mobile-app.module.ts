@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { MobileAppPageRoutingModule } from './mobile-app-routing.module';
 
 import { MobileAppPage } from './mobile-app.page';
+import {SharedComponentsModule} from "../../components/shared-components/shared-components.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    MobileAppPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        MobileAppPageRoutingModule,
+        SharedComponentsModule
+    ],
   declarations: [MobileAppPage]
 })
 export class MobileAppPageModule {}
