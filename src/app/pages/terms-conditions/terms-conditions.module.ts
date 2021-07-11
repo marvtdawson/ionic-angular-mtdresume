@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { TermsConditionsPageRoutingModule } from './terms-conditions-routing.module';
 
 import { TermsConditionsPage } from './terms-conditions.page';
+import {SharedComponentsModule} from "../../components/shared-components/shared-components.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    TermsConditionsPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        TermsConditionsPageRoutingModule,
+        SharedComponentsModule
+    ],
   declarations: [TermsConditionsPage]
 })
 export class TermsConditionsPageModule {}

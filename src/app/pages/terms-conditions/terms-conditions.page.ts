@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TermsConditionsPage implements OnInit {
 
+  pageTitle = 'Terms & Conditions Page';
   constructor() { }
 
   ngOnInit() {
