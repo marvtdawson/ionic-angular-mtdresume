@@ -1,10 +1,13 @@
-<ion-content>
-  <ion-card class="main-card">
-    <ion-card-content>
-      <ion-card-header>
-        <ion-card-title>{{ pageTitle }}</ion-card-title>
-      </ion-card-header>
+<ion-content class="no-page-found">
+  <ion-card class="no-page-found__card-container">
+    <ion-card-header>
+      <ion-card-title>OOPS! Something Went Wrong.</ion-card-title>
+      <ion-card-subtitle>The page that you seek was not found.</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="no-page-found__card-container__content">
+      <i class="fas fa-exclamation-triangle fa-9x"></i>
     </ion-card-content>
   </ion-card>
+  <!-- display page footer -->
   <app-footer></app-footer>
 </ion-content>
