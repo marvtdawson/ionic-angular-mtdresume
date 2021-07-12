@@ -66,6 +66,14 @@ const routes: Routes = [
         loadChildren: () => import('../reviews/reviews.module').then( m => m.ReviewsPageModule)
       },
       {
+        path: 'location',
+        loadChildren: () => import('../location/location.module').then( m => m.LocationPageModule)
+      },
+      {
+        path: 'testimonials',
+        loadChildren: () => import('../testimonials/testimonials.module').then( m => m.TestimonialsPageModule)
+      },
+      {
         path: 'mobile-app',
         loadChildren: () => import('../mobile-app/mobile-app.module').then(m => m.MobileAppPageModule)
       },

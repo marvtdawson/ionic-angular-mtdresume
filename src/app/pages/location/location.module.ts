@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ServicesPageRoutingModule } from './services-routing.module';
+import { LocationPageRoutingModule } from './location-routing.module';
 
-import { ServicesPage } from './services.page';
+import { LocationPage } from './location.page';
 import {SharedComponentsModule} from "../../components/shared-components/shared-components.module";
 
 @NgModule({
@@ -14,9 +14,9 @@ import {SharedComponentsModule} from "../../components/shared-components/shared-
         CommonModule,
         FormsModule,
         IonicModule,
-        ServicesPageRoutingModule,
+        LocationPageRoutingModule,
         SharedComponentsModule
     ],
-  declarations: [ServicesPage]
+  declarations: [LocationPage]
 })
-export class ServicesPageModule {}
+export class LocationPageModule {}
