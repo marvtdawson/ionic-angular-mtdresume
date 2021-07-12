@@ -2,7 +2,7 @@
   "name": "medviews2021",
   "version": "0.0.1",
   "author": "MedEviews",
-  "homepage": "https://medeviews.com/",
+  "homepage": "https://www.medeviews.com/",
   "description": "The MedEviews Site",
   "scripts": {
     "ng": "ng",
