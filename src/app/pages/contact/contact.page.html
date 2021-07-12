@@ -1,10 +1,110 @@
 <ion-content>
+  <app-header></app-header>
   <ion-card class="main-card">
     <ion-card-header>
-      <ion-card-title>{{ pageTitle }}</ion-card-title>
+      <ion-card-title>{{ pageTitle | uppercase }}</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content no-border>
+      <ion-grid>
+        <ion-row class="ion-text-center">
+          <ion-col>
+            <div class="page-content-top">
+              <p>
+                Here at {{ siteName }} we love hearing from you.
+              </p>
+              <p>
+                Please contact us and let us know what you think, or how we can improve our app, site, products or services to you.
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
 
+        <ion-row>
+          <ion-col class="register-login-col-1">
+            <ion-card class="form-card">
+              <ion-card-content>
+                <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                  <ion-list>
+                    <ion-item>
+                      <ion-label position="floating">First Name</ion-label>
+                      <ion-input type="text" formControlName="contactFirstName"></ion-input>
+                      <div *ngIf="contactFirstName.touched && contactFirstName.invalid" class="alert alert-danger">
+                        <div *ngIf="contactFirstName.errors.required">First name is required</div>
+                        <div *ngIf="contactFirstName.errors.minlength">First name should be minimum 2 characters. </div>
+                        <div *ngIf="contactFirstName.errors.maxlength">First name maximum size is 24 characters. </div>
+                        <div *ngIf="contactFirstName.errors.pattern">First name should only contain alpha characters.</div>
+                      </div>
+                    </ion-item>
+
+                    <ion-item>
+                      <ion-label position="floating">Last Name</ion-label>
+                      <ion-input type="text"
+                                 formControlName="contactLastName">
+                      </ion-input>
+                      <div *ngIf="contactLastName.touched && contactLastName.invalid" class="alert alert-danger">
+                        <div *ngIf="contactLastName.errors.required">Last name is required</div>
+                        <div *ngIf="contactLastName.errors.minlength">Last name should be minimum 2 characters. </div>
+                        <div *ngIf="contactLastName.errors.maxlength">Last name maximum size is 24 characters. </div>
+                        <div *ngIf="contactLastName.errors.pattern">Last name should only contain alpha characters.</div>
+                      </div>
+                    </ion-item>
+
+                    <ion-item>
+                      <ion-label position="floating">Email</ion-label>
+                      <ion-input type="email"
+                                 name="email"
+                                 formControlName="contactEmail">
+                      </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                      <ion-label position="floating">State</ion-label>
+                      <ion-select type="select"
+                                  formControlName="contactState" >
+                        <ion-select-option
+                          *ngFor="let state of stateOptions"
+                          [value]="state.abbreviation">{{ state.stateName }}
+                        </ion-select-option>
+                      </ion-select>
+                    </ion-item>
+
+                    <ion-item>
+                      <ion-label position="floating">City</ion-label>
+                      <ion-input type="text"
+                                 formControlName="contactCity">
+                      </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                      <ion-label position="floating">Message</ion-label>
+                      <ion-textarea type="text"
+                                    formControlName="contactMessage">
+                      </ion-textarea>
+                    </ion-item>
+
+                    <div class="form-button-wrapper">
+                      <ion-button align-items-center="center"
+                                  type="submit"
+                                  color="primary"
+                                  expand="block"
+                                  [disabled]="!contactForm.valid">SEND
+                      </ion-button>
+                    </div>
+                  </ion-list>
+                </form>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <!--ion-col class="register-login-col-2">
+            <div class="register-login-image-wrapper">
+              <img class="register-login-form-image" src="{{ siteLogo }}"/>
+            </div>
+          </ion-col-->
+
+        </ion-row>
+
+      </ion-grid>
     </ion-card-content>
   </ion-card>
   <app-footer></app-footer>

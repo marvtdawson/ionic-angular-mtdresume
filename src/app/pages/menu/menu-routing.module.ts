@@ -70,7 +70,7 @@ const routes: Routes = [
         loadChildren: () => import('../terms-conditions/terms-conditions.module').then(m => m.TermsConditionsPageModule)
       },
       {
-        path: 'private-policy',
+        path: 'privacy',
         loadChildren: () => import('../private-policy/private-policy.module').then(m => m.PrivatePolicyPageModule)
       },
       {

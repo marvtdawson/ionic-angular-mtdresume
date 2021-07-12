@@ -11,13 +11,11 @@
                 routerDirection="root"
                 routerLinkActive="active-item"
                 [routerLinkActiveOptions]="{exact: true}"
-                lines="none" detail="false"
-      >
+                lines="none" detail="false">
         <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
         <ion-label>{{ p.title }}</ion-label>
       </ion-item>
     </ion-menu-toggle>
   </ion-content>
 </ion-menu>
-<app-header></app-header>
 <ion-router-outlet id="main"></ion-router-outlet>
