@@ -102,6 +102,10 @@ const routes: Routes = [
         loadChildren: () => import('../faqs/faqs.module').then( m => m.FaqsPageModule)
       },
       {
+        path: 'pricing',
+        loadChildren: () => import('../pricing/pricing.module').then( m => m.PricingPageModule)
+      },
+      {
         path: 'admin',
         loadChildren: () => import('../../admin/admin.module').then( m => m.AdminPageModule)
       },
