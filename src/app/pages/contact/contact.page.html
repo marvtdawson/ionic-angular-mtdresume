@@ -4,7 +4,7 @@
     <ion-card-header>
       <ion-card-title>{{ pageTitle | uppercase }}</ion-card-title>
     </ion-card-header>
-    <ion-card-content no-border>
+    <ion-card-content>
       <ion-grid>
         <ion-row class="ion-text-center">
           <ion-col>
@@ -59,11 +59,11 @@
 
                     <ion-item>
                       <ion-label position="floating">State</ion-label>
-                      <ion-select type="select"
-                                  formControlName="contactState" >
+                      <ion-select placeholder="Select One"
+                                  formControlName="contactState" multiple="true" >
                         <ion-select-option
                           *ngFor="let state of stateOptions"
-                          [value]="state.abbreviation">{{ state.stateName }}
+                          value="state.abbreviation">{{ state.stateName }}
                         </ion-select-option>
                       </ion-select>
                     </ion-item>
@@ -83,7 +83,7 @@
                     </ion-item>
 
                     <div class="form-button-wrapper">
-                      <ion-button align-items-center="center"
+                      <ion-button
                                   type="submit"
                                   color="primary"
                                   expand="block"

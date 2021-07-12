@@ -82,6 +82,22 @@ const routes: Routes = [
         loadChildren: () => import('../logout/logout.module').then(m => m.LogoutPageModule)
       },
       {
+        path: 'history',
+        loadChildren: () => import('../history/history.module').then( m => m.HistoryPageModule)
+      },
+      {
+        path: 'covid',
+        loadChildren: () => import('../covid/covid.module').then( m => m.CovidPageModule)
+      },
+      {
+        path: 'services',
+        loadChildren: () => import('../services/services.module').then( m => m.ServicesPageModule)
+      },
+      {
+        path: 'faqs',
+        loadChildren: () => import('../faqs/faqs.module').then( m => m.FaqsPageModule)
+      },
+      {
         path: 'admin',
         loadChildren: () => import('../../admin/admin.module').then( m => m.AdminPageModule)
       },

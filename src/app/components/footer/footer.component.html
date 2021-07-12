@@ -36,10 +36,10 @@
         <ion-col size-xs>
           <div class="footer__signup">
             <div class="footer__signup__div-1">
-              <ion-input type="text" placeholder="Save 10% off* your first move"></ion-input>
+              <ion-input type="text" placeholder="Subscribe and stay connected"></ion-input>
             </div>
             <div class="footer__signup__div-2">
-              <ion-button color="tertiary" fill="outline">Sign Up</ion-button>
+              <ion-button color="tertiary" fill="outline">Subscribe</ion-button>
             </div>
           </div>
         </ion-col>
@@ -96,7 +96,6 @@
               <ion-item lines="none"><a [routerLink]="['/covid']">COVID-19 Update</a></ion-item>
               <ion-item lines="none"><a [routerLink]="['/location']">Location</a></ion-item>
               <ion-item lines="none"><a [routerLink]="['/testimonials']">Testimonials</a></ion-item>
-              <ion-item lines="none"><a [routerLink]="['/fleet']">Fleet</a></ion-item>
             </ion-list>
           </div>
         </ion-col>
@@ -110,12 +109,11 @@
                 </ion-label>
               </ion-item-divider>
 
+              <ion-item lines="none"><a [routerLink]="['/reviews']">Reviews</a></ion-item>
               <ion-item lines="none"><a [routerLink]="['/services']">Services</a></ion-item>
               <ion-item lines="none"><a [routerLink]="['/faqs']">FAQs</a></ion-item>
-              <ion-item lines="none"><a [routerLink]="['/cancellations']">Cancellations</a></ion-item>
-              <ion-item lines="none"><a [routerLink]="['/pricing']">Pricing</a></ion-item>
-              <ion-item lines="none"><a [routerLink]="['/aos']">Areas Of Service</a></ion-item>
-              <ion-item lines="none"><a [routerLink]="['/privacy']">Customer Privacy</a></ion-item>
+              <ion-item lines="none"><a [routerLink]="['/privacy']">Privacy Policy</a></ion-item>
+              <ion-item lines="none"><a [routerLink]="['/pricing']">Membership</a></ion-item>
             </ion-list>
           </div>
         </ion-col>
@@ -131,11 +129,11 @@
               <div class="footer__wrapper__nav-subdiv__subdiv-3">
                 <ion-item lines="none">
                   <ion-label>
-                    Subscribe and save 10% off!
+                    We would love to hear from you.
                   </ion-label>
                 </ion-item>
                 <ion-item lines="none">
-                  <ion-button size="large" class="quote-btn" (click)="subscribe()">Subscribe</ion-button>
+                  <ion-button size="large" class="quote-btn" (click)="getContactForm()">Contact Us</ion-button>
                   <!--button class="footer__wrapper__nav-subdiv__btn" (click)="getQuoteForm()">Get Quote
                   </button-->
                 </ion-item>
