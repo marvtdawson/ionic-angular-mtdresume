@@ -51,6 +51,19 @@
       }
 
     }
+
+    &__mobile-app { }
+
+    &__wrapper {
+
+      & a {
+        text-decoration: none;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

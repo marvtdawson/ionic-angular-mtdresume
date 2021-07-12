@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "medviews2021",
+	"appId": "com.medeviews",
+	"appName": "medeviews2021",
 	"webDir": "www",
 	"bundledWebRuntime": false
 }
