@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  customerSatisfactionImage = '';
-  constructor() { }
+  // customerSatisfactionImage = '';
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  openFMLModal() {}
+  openRegisterModal() {
+    this.router.navigate(['/register'])
+      .then()
+      .catch();
+  }
 
 }

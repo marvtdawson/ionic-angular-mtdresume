@@ -52,7 +52,8 @@
 
     }
 
-    &__mobile-app { }
+    &__mobile-app {
+    }
 
     &__wrapper {
 
@@ -62,6 +63,26 @@
 
       & a:hover {
         text-decoration: underline;
+      }
+
+      &__nav-subdiv{
+
+        &--subdiv-3 {
+          text-align: center;
+        }
+      }
+
+    }
+
+    &__site-info {
+      font-size: 1.4rem;
+
+      &__content-1 {
+        text-align: left;
+      }
+
+      &__content-2 {
+        text-align: right;
       }
     }
   }
