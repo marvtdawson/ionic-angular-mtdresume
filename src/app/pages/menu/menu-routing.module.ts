@@ -118,6 +118,11 @@ const routes: Routes = [
         loadChildren: () => import('../pricing/pricing.module').then( m => m.PricingPageModule)
       },
       {
+        path: 'categories',
+        loadChildren: () => import('../../categories/categories.module').then(m => m.CategoriesPageModule),
+
+      },
+      {
         path: 'admin',
         loadChildren: () => import('../../admin/admin.module').then( m => m.AdminPageModule)
       },
