@@ -1,6 +1,6 @@
 <ion-content>
-  <app-header></app-header>
   <app-jumbotron></app-jumbotron>
+
   <section class="how-we-help">
     <ion-card-header>
       <ion-card-subtitle class="section-headings">
@@ -34,6 +34,49 @@
           </div>
         </ion-col>
 
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <!-- show by department -->
+  <section class="shop-by-department">
+    <ion-card-header>
+      <ion-card-subtitle class="section-headings">
+        <h1>Shop By Department</h1>
+        <h5></h5>
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card>
+      <ion-card-content class="shop-by-department__col--content">
+        <ion-col>
+          <ion-grid>
+            <ion-row class="shop-by-department__col--content__row">
+              <ion-col class="shop-by-department__col--content__row__cols"
+                       *ngFor="let deps of departments">
+                <a routerLink="{{ deps.linkPath }}">
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div class="shop-by-department__col--content__row__cols__img">
+                          <img class="shop-by-department--col__content__row__cols__img__size"
+                               src="{{ deps.linkImage }}" alt="{{ deps.linkText }}">
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="shop-by-department__col--content__row__cols__text">
+                          {{ deps.linkText }}
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </a>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
       </ion-card-content>
     </ion-card>
   </section>
@@ -76,7 +119,7 @@
   <section class="green-communication">
     <ion-card-header>
       <ion-card-subtitle class="section-headings">
-        <h1>Find MedEviews on medical providers industry areas. </h1>
+        <h1>MedEviews has all your medical travel needs </h1>
         <h5>Save <span class="green-text">trees</span> & communicate instantly</h5>
       </ion-card-subtitle>
     </ion-card-header>
@@ -84,12 +127,9 @@
       <ion-card-content class="green-communication__content-wrapper">
         <ion-row class="green-communication__content-wrapper__row-1">
           <ion-col class="green-communication__content-wrapper__row-1__col-1 composition">
-            <img src="../../../assets/img/site/doctors/doctor1.jpeg" alt="Photo 1"
-                 class="composition__photo composition__photo--p1 img-1">
-            <img src="../../../assets/img/site/doctors/doctor2.jpeg" alt="Photo 2"
-                 class="composition__photo composition__photo--p2 img-2">
-            <img src="../../../assets/img/site/doctors/doctor3.jpeg" alt="Photo 3"
-                 class="composition__photo composition__photo--p3 img-3">
+            <i class="fas fa-car fa-9x"></i>
+            <i class="fas fa-plane-departure fa-9x"></i>
+            <i class="fas fa-hotel fa-9x"></i>
           </ion-col>
           <ion-col class="green-communication_content-wrapper__row-1__col-2">
             <div class="col-1-of-2">
@@ -187,19 +227,19 @@
         class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--11">
         <img src="../../../assets/img/site/doctors/doctor11.jpeg" alt="Doctor Image 11"
-                                                           class="gallery__img"></figure>
+             class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--12">
         <img src="../../../assets/img/site/doctors/doctor12.jpeg" alt="Doctor Image 12"
-                                                           class="gallery__img"></figure>
+             class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--13">
         <img src="../../../assets/img/site/doctors/doctor13.jpeg" alt="Doctor Image 13"
              class="gallery__img"></figure>
       <figure class="gallery__item gallery__item--14">
         <img src="../../../assets/img/site/doctors/doctor14.jpeg" alt="Doctor Image 14"
-                                                           class="gallery__img"></figure>
+             class="gallery__img"></figure>
 
     </section>
   </ion-row>
   <app-footer></app-footer>
-  </ion-content>
+</ion-content>
 
