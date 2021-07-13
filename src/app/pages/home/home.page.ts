@@ -12,74 +12,74 @@ export class HomePage implements OnInit {
   public departments = [
     {
       thumbnailImg: true,
-      linkPath: '/mattresses',
-      linkImage: '../../assets/img/matts/beautyrest_black_mariela.png',
+      linkPath: '/allergy',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
       linkText: 'Allergy and Immunology'
     },
     {
       thumbnailImg: true,
-      linkPath: '/bedrooms',
-      linkImage: '../../assets/img/bed_rm/Tabasco_Storage_King_Bed_Styled.jpg',
+      linkPath: '/alternative-medicine',
+      linkImage: '../../assets/img/site/med_categories/alternative_med.jpg',
       linkText: 'Alternative Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/living-rooms',
-      linkImage: '../../assets/img/liv_rm/Compact-apartment-Moscow.jpg',
+      linkPath: '/anesthesiology',
+      linkImage: '../../assets/img/site/med_categories/anesthesiology.jpeg',
       linkText: 'Anesthesiology'
     },
     {
       thumbnailImg: true,
-      linkPath: '/kitchens',
-      linkImage: './assets/img/kitch/kitchen_image_2.jpg',
+      linkPath: '/digestive',
+      linkImage: '../../assets/img/site/med_categories/digestive.jpg',
       linkText: 'Colon and Rectal Surgery'
     },
     {
       thumbnailImg: true,
-      linkPath: '/dining-rooms',
-      linkImage: './assets/img/dining_rm/dining-tables-slide-0XQB-jumbo.jpg',
+      linkPath: '/dental',
+      linkImage: './assets/img/site/med_categories/dental.jpg',
       linkText: 'Dental'
     },
     {
       thumbnailImg: true,
-      linkPath: '/bathrooms',
-      linkImage: './assets/img/bath_rm/bathroom_1.jpg',
+      linkPath: '/dermatology',
+      linkImage: '../../assets/img/site/med_categories/dermatology.jpeg',
       linkText: 'Dermatology'
     },
     {
       thumbnailImg: true,
-      linkPath: '/lamps',
-      linkImage: './assets/img/lamps/1-splash-mobile-Table-Lamps.jpg',
-      linkText: 'Dietcian'
+      linkPath: '/dietitian',
+      linkImage: '../../assets/img/site/med_categories/dietary2.jpg',
+      linkText: 'Dietitian'
     },
     {
       thumbnailImg: true,
-      linkPath: '/tables',
-      linkImage: './assets/img/tables/tyler-creek-counter-height-dining-room-table-0.jpg',
+      linkPath: '/emergency-medicine',
+      linkImage: '../../assets/img/site/med_categories/emergency2.jpg',
       linkText: 'Emergency Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/recliners',
-      linkImage: './assets/img/recliners/lansing-tufted-leather-recliner-with-nailheads-o.jpg',
+      linkPath: '/family-medicine',
+      linkImage: '../../assets/img/site/med_categories/family_med.jpg',
       linkText: 'Family Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/accessories',
-      linkImage: './assets/img/accessories/eb079052b1972b81297106d1c55c573e.jpg',
+      linkPath: '/internal-medicine',
+      linkImage: '../../assets/img/site/med_categories/internal_med.jpg',
       linkText: 'Internal Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/accessories',
-      linkImage: './assets/img/accessories/eb079052b1972b81297106d1c55c573e.jpg',
+      linkPath: '/medical-facilitation',
+      linkImage: '../../assets/img/site/med_categories/med_facilitation.jpg',
       linkText: 'Medical Facilitation'
     },
     {
       thumbnailImg: true,
-      linkPath: '/accessories',
-      linkImage: './assets/img/accessories/eb079052b1972b81297106d1c55c573e.jpg',
+      linkPath: '/genetics',
+      linkImage: '../../assets/img/site/med_categories/genetics.jpg',
       linkText: 'Genetics and Genomics'
     }
   ];
