@@ -23,7 +23,9 @@ export class HeaderComponent implements OnInit {
   constructor(private siteData: SiteDataService) {
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+  }
 
   hideDropdown(event) {
     const xTouch = event.clientX;

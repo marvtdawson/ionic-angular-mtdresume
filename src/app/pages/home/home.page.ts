@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+// import { VideoPlayer} from '@ionic-native/video-player/ngx';
 
 @Component({
   selector: 'app-home',
@@ -83,6 +84,11 @@ export class HomePage implements OnInit {
       linkText: 'Genetics and Genomics'
     }
   ];
+  // vidPlayer = this.videoPlayer.play('../../assets/videos/home_page.mov')
+  //   .then()
+  //   .catch(err => {
+  //     console.log(err);
+  //   });
   constructor(private router: Router) { }
 
   ngOnInit() {
