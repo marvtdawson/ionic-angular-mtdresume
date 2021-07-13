@@ -8,11 +8,11 @@ import {Router} from '@angular/router';
 })
 export class HomePage implements OnInit {
 
-  // customerSatisfactionImage = '';
+  customerSatisfactionImage = '../../assets/img/site/customer_service.jpg';
   public departments = [
     {
       thumbnailImg: true,
-      linkPath: '/allergy',
+      linkPath: '/categories/allergies',
       linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
       linkText: 'Allergy and Immunology'
     },

@@ -4,8 +4,8 @@
   <section class="how-we-help">
     <ion-card-header>
       <ion-card-subtitle class="section-headings">
-        <h1>How MedEviews help</h1>
-        <h5>Making the right medical decisions is important</h5>
+        <h1>How MedEviews can help</h1>
+        <h5>Making the right medical decisions is important.</h5>
       </ion-card-subtitle>
     </ion-card-header>
     <ion-card>
@@ -67,7 +67,7 @@
                     <ion-row>
                       <ion-col>
                         <div class="shop-by-department__col--content__row__cols__text">
-                          {{ deps.linkText }}
+                          <a href="{{ deps.linkPath}}">{{ deps.linkText }}</a>
                         </div>
                       </ion-col>
                     </ion-row>
@@ -86,7 +86,7 @@
       <ion-card-header>
         <ion-card-subtitle class="section-headings">
           <h1>Help Improve Medical Customer Service</h1>
-          <h5>MedEviews helps new patients who are seeking medical services, both domestically and internationally.</h5>
+          <h5>MedEviews helps new patients who are seeking medical services, both domestic and internationally.</h5>
         </ion-card-subtitle>
       </ion-card-header>
 
@@ -109,7 +109,7 @@
         </ion-col>
         <ion-col class="value-perception__content-wrapper__col-2">
           <div>
-            <ion-img [src]=""></ion-img>
+            <ion-img [src]="customerSatisfactionImage"></ion-img>
           </div>
         </ion-col>
       </ion-card-content>

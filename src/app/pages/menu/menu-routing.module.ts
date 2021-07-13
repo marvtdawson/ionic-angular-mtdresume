@@ -122,6 +122,10 @@ const routes: Routes = [
         loadChildren: () => import('../../admin/admin.module').then( m => m.AdminPageModule)
       },
       {
+        path: 'sitemap',
+        loadChildren: () => import('../sitemap/sitemap.module').then( m => m.SitemapPageModule)
+      },
+      {
         path: 'page-not-found',
         loadChildren: () => import('../page-not-found/page-not-found.module').then(m => m.PageNotFoundPageModule)
       },

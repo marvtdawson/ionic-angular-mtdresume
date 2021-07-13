@@ -80,7 +80,9 @@
 
 /* shop by department card */
 .shop-by-department {
-  // margin: 1.3rem auto 5rem;
+  margin: 1.3rem auto 5rem;
+  width: 90%;
+
   display: grid;
   grid-template-columns: 1fr;
 
@@ -114,7 +116,15 @@
           grid-template-columns: 1fr;
 
           &__text {
-            margin-top: 1rem;
+            margin-top: 2.7rem;
+
+            & a {
+              text-decoration: none;
+            }
+
+            & a:hover {
+              text-decoration: underline;
+            }
           }
 
           &__img {
