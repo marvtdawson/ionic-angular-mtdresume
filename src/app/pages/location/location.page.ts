@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationPage implements OnInit {
 
+  pageTitle = 'Where Are We Located';
   constructor() { }
 
   ngOnInit() {

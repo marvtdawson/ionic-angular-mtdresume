@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimonialsPage implements OnInit {
 
+  pageTitle = 'What are people saying about MedEviews';
   constructor() { }
 
   ngOnInit() {
