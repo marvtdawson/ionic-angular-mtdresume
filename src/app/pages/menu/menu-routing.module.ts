@@ -120,7 +120,62 @@ const routes: Routes = [
       {
         path: 'categories',
         loadChildren: () => import('../../categories/categories.module').then(m => m.CategoriesPageModule),
-
+        children: [
+          {
+            path: 'allergies',
+            loadChildren: () => import('../../categories/allergies/allergies.module').then(m => m.AllergiesPageModule)
+          },
+          {
+            path: 'alternative-medicine',
+            loadChildren: () => import('../../categories/alternative-medicine/alternative-medicine.module')
+              .then( m => m.AlternativeMedicinePageModule)
+          },
+          {
+            path: 'dental',
+            loadChildren: () => import('../../categories/dental/dental.module').then( m => m.DentalPageModule)
+          },
+          {
+            path: 'anesthesiology',
+            loadChildren: () => import('../../categories/anesthesiology/anesthesiology.module').then( m => m.AnesthesiologyPageModule)
+          },
+          {
+            path: 'digestive',
+            loadChildren: () => import('../../categories/digestive/digestive.module').then( m => m.DigestivePageModule)
+          },
+          {
+            path: 'dermatology',
+            loadChildren: () => import('../../categories/dermatology/dermatology.module').then( m => m.DermatologyPageModule)
+          },
+          {
+            path: 'dietitian',
+            loadChildren: () => import('../../categories/dietitian/dietitian.module')
+              .then( m => m.DietitianPageModule)
+          },
+          {
+            path: 'emergency-medicine',
+            loadChildren: () => import('../../categories/emergency-medicine/emergency-medicine.module')
+              .then( m => m.EmergencyMedicinePageModule)
+          },
+          {
+            path: 'family-medicine',
+            loadChildren: () => import('../../categories/family-medicine/family-medicine.module')
+              .then( m => m.FamilyMedicinePageModule)
+          },
+          {
+            path: 'medical-facilitation',
+            loadChildren: () => import('../../categories/medical-facilitation/medical-facilitation.module')
+              .then( m => m.MedicalFacilitationPageModule)
+          },
+          {
+            path: 'internal-medicine',
+            loadChildren: () => import('../../categories/internal-medicine/internal-medicine.module')
+              .then( m => m.InternalMedicinePageModule)
+          },
+          {
+            path: 'genetics',
+            loadChildren: () => import('../../categories/genetics/genetics.module').then( m => m.GeneticsPageModule)
+          }
+        ]
       },
       {
         path: 'admin',

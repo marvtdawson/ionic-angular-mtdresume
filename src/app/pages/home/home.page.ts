@@ -19,67 +19,67 @@ export class HomePage implements OnInit {
     },
     {
       thumbnailImg: true,
-      linkPath: '/alternative-medicine',
+      linkPath: '/categories/alternative-medicine',
       linkImage: '../../assets/img/site/med_categories/alternative_med.jpg',
       linkText: 'Alternative Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/anesthesiology',
+      linkPath: '/categories/anesthesiology',
       linkImage: '../../assets/img/site/med_categories/anesthesiology.jpeg',
       linkText: 'Anesthesiology'
     },
     {
       thumbnailImg: true,
-      linkPath: '/digestive',
+      linkPath: '/categories/digestive',
       linkImage: '../../assets/img/site/med_categories/digestive.jpg',
       linkText: 'Colon and Rectal Surgery'
     },
     {
       thumbnailImg: true,
-      linkPath: '/dental',
+      linkPath: '/categories/dental',
       linkImage: './assets/img/site/med_categories/dental.jpg',
       linkText: 'Dental'
     },
     {
       thumbnailImg: true,
-      linkPath: '/dermatology',
+      linkPath: '/categories/dermatology',
       linkImage: '../../assets/img/site/med_categories/dermatology.jpeg',
       linkText: 'Dermatology'
     },
     {
       thumbnailImg: true,
-      linkPath: '/dietitian',
+      linkPath: '/categories/dietitian',
       linkImage: '../../assets/img/site/med_categories/dietary2.jpg',
       linkText: 'Dietitian'
     },
     {
       thumbnailImg: true,
-      linkPath: '/emergency-medicine',
+      linkPath: '/categories/emergency-medicine',
       linkImage: '../../assets/img/site/med_categories/emergency2.jpg',
       linkText: 'Emergency Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/family-medicine',
+      linkPath: '/categories/family-medicine',
       linkImage: '../../assets/img/site/med_categories/family_med.jpg',
       linkText: 'Family Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/internal-medicine',
+      linkPath: '/categories/internal-medicine',
       linkImage: '../../assets/img/site/med_categories/internal_med.jpg',
       linkText: 'Internal Medicine'
     },
     {
       thumbnailImg: true,
-      linkPath: '/medical-facilitation',
+      linkPath: '/categories/medical-facilitation',
       linkImage: '../../assets/img/site/med_categories/med_facilitation.jpg',
       linkText: 'Medical Facilitation'
     },
     {
       thumbnailImg: true,
-      linkPath: '/genetics',
+      linkPath: '/categories/genetics',
       linkImage: '../../assets/img/site/med_categories/genetics.jpg',
       linkText: 'Genetics and Genomics'
     }
