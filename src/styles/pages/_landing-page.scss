@@ -20,7 +20,8 @@
 .value-perception,
 .founding-member,
 .parking,
-.laundry {
+.laundry,
+.shop-by-department {
   @extend %section-default;
 
   & .section-headings {
