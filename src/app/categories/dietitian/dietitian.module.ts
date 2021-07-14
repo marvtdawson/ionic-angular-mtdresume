@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { DietitianPageRoutingModule } from './dietitian-routing.module';
 
 import { DietitianPage } from './dietitian.page';
+import {SharedComponentsModule} from "../../components/shared-components/shared-components.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    DietitianPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        DietitianPageRoutingModule,
+        SharedComponentsModule
+    ],
   declarations: [DietitianPage]
 })
 export class DietitianPageModule {}

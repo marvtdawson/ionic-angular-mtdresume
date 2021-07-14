@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { DermatologyPageRoutingModule } from './dermatology-routing.module';
 
 import { DermatologyPage } from './dermatology.page';
+import {SharedComponentsModule} from "../../components/shared-components/shared-components.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    DermatologyPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        DermatologyPageRoutingModule,
+        SharedComponentsModule
+    ],
   declarations: [DermatologyPage]
 })
 export class DermatologyPageModule {}

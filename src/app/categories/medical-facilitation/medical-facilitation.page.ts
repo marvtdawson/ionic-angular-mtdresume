@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MedicalFacilitationPage implements OnInit {
 
+  pageTitle = 'Medical Facilitation';
   constructor() { }
 
   ngOnInit() {

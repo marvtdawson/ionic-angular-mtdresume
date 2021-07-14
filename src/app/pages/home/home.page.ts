@@ -38,7 +38,7 @@ export class HomePage implements OnInit {
     {
       thumbnailImg: true,
       linkPath: '/categories/dental',
-      linkImage: './assets/img/site/med_categories/dental.jpg',
+      linkImage: './assets/img/site/med_categories/dental2.jpg',
       linkText: 'Dental'
     },
     {
@@ -80,7 +80,7 @@ export class HomePage implements OnInit {
     {
       thumbnailImg: true,
       linkPath: '/categories/genetics',
-      linkImage: '../../assets/img/site/med_categories/genetics.jpg',
+      linkImage: '../../assets/img/site/med_categories/genetics2.jpg',
       linkText: 'Genetics and Genomics'
     },
     {

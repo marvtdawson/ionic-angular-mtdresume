@@ -1,3 +1,5 @@
+@import "src/styles/base/base";
+
 %section-default {
   width: 100%;
   align-content: center;
@@ -117,6 +119,7 @@
 
           &__text {
             margin-top: 2.7rem;
+            border-radius: 1.7rem;
 
             & a {
               text-decoration: none;
@@ -129,6 +132,7 @@
 
           &__img {
             max-height: 150px;
+            box-shadow: 3px 3px 5px #4e4e4e;
 
             &__size {
               max-height: 150px;

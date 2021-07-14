@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./anesthesiology.page.scss'],
 })
 export class AnesthesiologyPage implements OnInit {
-
+  pageTitle = 'Anesthesiology';
   constructor() { }
 
   ngOnInit() {

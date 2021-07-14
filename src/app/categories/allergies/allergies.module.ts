@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { AllergiesPageRoutingModule } from './allergies-routing.module';
 
 import { AllergiesPage } from './allergies.page';
+import {SharedComponentsModule} from "../../components/shared-components/shared-components.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    AllergiesPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        AllergiesPageRoutingModule,
+        SharedComponentsModule
+    ],
   declarations: [AllergiesPage]
 })
 export class AllergiesPageModule {}
