@@ -23,6 +23,10 @@ export class FooterComponent implements OnInit {
       .catch();
   }
 
-  subscribeToMedEviews() {}
+  openSubscribeModal() {
+    this.router.navigate(['/subscribe'])
+      .then()
+      .catch();
+  }
 
 }
