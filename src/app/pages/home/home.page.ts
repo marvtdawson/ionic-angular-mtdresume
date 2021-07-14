@@ -82,6 +82,24 @@ export class HomePage implements OnInit {
       linkPath: '/categories/genetics',
       linkImage: '../../assets/img/site/med_categories/genetics.jpg',
       linkText: 'Genetics and Genomics'
+    },
+    {
+      thumbnailImg: true,
+      linkPath: '/categories/cosmetics',
+      linkImage: '../../../assets/img/site/doctors/doctor2.jpeg',
+      linkText: 'Cosmetic'
+    },
+    {
+      thumbnailImg: true,
+      linkPath: '/categories/pharmaceutical',
+      linkImage: '../../assets/img/site/med_categories/pharmaceutical.jpg',
+      linkText: 'Pharmaceutical'
+    },
+    {
+      thumbnailImg: true,
+      linkPath: '/categories/ophthalmology',
+      linkImage: '../../assets/img/site/med_categories/ophthalmology.jpg',
+      linkText: 'Ophthalmology'
     }
   ];
   // vidPlayer = this.videoPlayer.play('../../assets/videos/home_page.mov')

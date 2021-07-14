@@ -174,7 +174,22 @@ const routes: Routes = [
           {
             path: 'genetics',
             loadChildren: () => import('../../categories/genetics/genetics.module').then( m => m.GeneticsPageModule)
-          }
+          },
+          {
+            path: 'cosmetics',
+            loadChildren: () => import('../../categories/cosmetics/cosmetics.module')
+              .then( m => m.CosmeticsPageModule)
+          },
+          {
+            path: 'ophthalmology',
+            loadChildren: () => import('../../categories/ophthalmology/ophthalmology.module')
+              .then( m => m.OphthalmologyPageModule)
+          },
+          {
+            path: 'pharmaceutical',
+            loadChildren: () => import('../../categories/pharmaceutical/pharmaceutical.module')
+              .then( m => m.PharmaceuticalPageModule)
+          },
         ]
       },
       {
