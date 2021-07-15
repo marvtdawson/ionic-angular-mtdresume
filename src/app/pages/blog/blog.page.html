@@ -6,14 +6,14 @@
     <ion-card-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <ion-card>
+          <ion-col size="4" class="side">
+            <ion-card class="side__cards">
               <ion-card-header>
                 <ion-card-title>Join Our Newsletter</ion-card-title>
               </ion-card-header>
-                <ion-button expand="block">Click to Subscribe</ion-button>
+                <ion-button expand="block" (click)="openSubscribeModal()">Click to Subscribe</ion-button>
             </ion-card>
-            <ion-card>
+            <ion-card class="side__cards">
               <ion-card-header>
                 <ion-card-title>Join Our Community</ion-card-title>
               </ion-card-header>
@@ -28,28 +28,30 @@
             </ion-card>
             <ion-card></ion-card>
           </ion-col>
-          <ion-col>
 
-            <ion-card>
-              <ion-list>
-                <ion-list-header>
+          <ion-col size="8" class="blog">
+            <ion-card class="blog__card">
+              <ion-card-header>
+                <ion-card-title>
                   Blog
-                </ion-list-header>
+                </ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <div class="blog__card__articles-wrapper" *ngFor="let art of articles">
+                  <div class="blog__card__articles-wrapper__avatar">
+                    <ion-label>Posted: {{ art.blogDate }}</ion-label>
+                    <ion-avatar slot="start">
+                      <i class="fad fa-newspaper fa-9x"></i>
+                    </ion-avatar>
+                  </div>
+                  <div class="blog__card__articles-wrapper__summary">
+                    <h2>{{ art.blogTitle }}</h2>
+                    <h4>Category: {{ art.blogCategory }} </h4>
+                    <p>{{ art.blogArticleSummary }}</p>
+                  </div>
+                </div>
+              </ion-card-content>
 
-                <ion-item>
-                  <ion-avatar slot="start">
-                    <ion-label>Posted: 03/22/2021</ion-label>
-                    <i class="far fa-id-card fa-9x"></i>
-                  </ion-avatar>
-                  <ion-label>
-                    <h2>Article 3</h2>
-                    <p>This is a sample blog article published by the Admin User - Blog Author.
-                      You can always publish more news articles... View More</p>
-                    <p>Category: </p>
-                  </ion-label>
-                </ion-item>
-
-              </ion-list>
             </ion-card>
 
           </ion-col>

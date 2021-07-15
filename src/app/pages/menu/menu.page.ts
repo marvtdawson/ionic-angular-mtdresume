@@ -25,7 +25,7 @@ export class MenuPage implements OnInit {
       icon: 'people'
     },
     {
-      title: 'Blog',
+      title: 'Latest News',
       url: '/blog',
       icon: 'newspaper'
     },
