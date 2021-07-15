@@ -32,7 +32,6 @@
     <!--ion-grid class="footer"-->
     <ion-grid>
       <ion-row>
-
         <ion-col size-xs>
           <div class="footer__signup">
             <div class="footer__signup__div-1">
@@ -76,7 +75,7 @@
         <ion-col size-xs>
           <div class="footer__mobile-apps">
             <a [routerLink]="['/mobile-app']">
-              <i class="fal fa-mobile-alt"></i> Mobile apps
+               Mobile apps <i class="fad fa-mobile-alt fa-4x"></i>
             </a>
           </div>
         </ion-col>
@@ -128,16 +127,20 @@
                 </ion-label>
               </ion-item-divider>
               <div class="footer__wrapper__nav-subdiv__subdiv-3">
-                <ion-item lines="none">
-                  <ion-label>
-                    We would love to hear from you.
-                  </ion-label>
-                </ion-item>
-                <ion-item lines="none">
-                  <ion-button size="large" class="quote-btn" (click)="getContactForm()">Contact Us</ion-button>
-                  <!--button class="footer__wrapper__nav-subdiv__btn" (click)="getQuoteForm()">Get Quote
+                  <div class="footer__wrapper__nav-subdiv__btn">
+                    <ion-item lines="none">
+                      <ion-label>
+                        We would love to hear from you.
+                      </ion-label>
+                    </ion-item>
+                    <ion-item lines="none">
+                    </ion-item>
+                    <ion-button size="large" class="quote-btn" (click)="getContactForm()">Contact Us</ion-button>
+                  </div>
+
+                  <!--button class="" (click)="getQuoteForm()">Get Quote
                   </button-->
-                </ion-item>
+
               </div>
             </ion-list>
           </div>
