@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
@@ -8,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterPage implements OnInit {
 
   pageTitle = 'Register With MedEviews';
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
-
 }
