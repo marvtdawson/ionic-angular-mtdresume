@@ -20,6 +20,7 @@ ion-header, ion-toolbar, ion-title {
       display: flex;
 
       &__logo {
+        display: block;
         width: 20%;
         height: 20%;
         float: left;
@@ -101,7 +102,7 @@ ion-header, ion-toolbar, ion-title {
   background: #FFFFFF;
   position: absolute;
   top: 3.9rem;
-  left: 410px;
+  left: 470px;
   z-index: 1;
   ion-item:hover {
     --ion-item-color: var(--ion-color-primary);
