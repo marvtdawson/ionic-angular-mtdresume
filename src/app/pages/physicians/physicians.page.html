@@ -14,9 +14,10 @@
               <ion-card-content>
                 <div class="profiles__side-categories__cards__topic-wrapper" *ngFor="let cats of doctors">
                   <ion-list lines="none">
-                    <ion-item>
-                      <ion-label>{{ cats.doctorAOP }}</ion-label>
-
+                    <ion-item class="profiles__side-categories__cards__topic-wrapper__link" >
+                      <a routerLink="{{ cats.linkPath }}">
+                        <ion-label>{{ cats.doctorAOP }}</ion-label>
+                      </a>
                     </ion-item>
                   </ion-list>
                 </div>
@@ -28,22 +29,32 @@
             <ion-card class="profiles__person-info__card">
               <ion-card-header>
                 <ion-card-title>
-                  Doctors
+                  Found Physicians
                 </ion-card-title>
+                <ion-item>
+                  <ion-label>Filter By:</ion-label>
+                  <ion-select>
+                    <ion-select-option value="Country">Country</ion-select-option>
+                    <ion-select-option value="Date">Date</ion-select-option>
+                    <ion-select-option value="Name">Name</ion-select-option>
+                    <ion-select-option value="Rating">Rating</ion-select-option>
+                  </ion-select>
+                </ion-item>
+
               </ion-card-header>
-              <ion-card-content>
-                <div class="profiles__person-info__card__id-wrapper" *ngFor="let docs of doctors">
+              <ion-card-content *ngFor="let docs of doctors">
+                <div class="profiles__person-info__card__id-wrapper" >
                   <div class="profiles__person-info__card__id-wrapper__avatar">
-                    <ion-label>Joined: {{ docs.joinDate }}</ion-label>
                     <ion-avatar slot="start">
-                      <i class="fas fa-id-card fa-9x"></i>
+                      <i class="fas fa-user-md fa-9x"></i>
                     </ion-avatar>
                   </div>
                   <div class="profiles__person-info__card__id-wrapper__summary">
                     <h2>Name: {{ docs.doctorName }}</h2>
-                    <h4>Country: {{ docs.doctorCountry }}</h4>
+                    <h2>Country: {{ docs.doctorCountry }}</h2>
                     <p>Area of Practice: {{ docs.doctorAOP }} </p>
                     <p>Approval Rating: {{ docs.doctorRating }} </p>
+                    <p>Joined: {{ docs.joinDate }}</p>
                     <ion-button slot="end">View Profile</ion-button>
                   </div>
                 </div>

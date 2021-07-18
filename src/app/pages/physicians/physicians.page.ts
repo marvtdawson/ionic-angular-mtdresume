@@ -12,7 +12,7 @@ export class PhysiciansPage implements OnInit {
     {
       thumbnailImg: true,
       joinDate: '03/17/2021',
-      doctorCategory: 'Cosmetics',
+      doctorCategory: 'Allergy and Immunology',
       doctorName: 'Juan Doe',
       doctorCountry: 'Mexico',
       linkPath: '/categories/allergies',
@@ -22,87 +22,146 @@ export class PhysiciansPage implements OnInit {
     },
     {
       thumbnailImg: true,
+      joinDate: '08/09/2021',
+      doctorCategory: 'Alternative Medicine',
+      doctorName: 'Juan Dominguez',
+      doctorCountry: 'Cuba',
       linkPath: '/categories/alternative-medicine',
-      linkImage: '../../assets/img/site/med_categories/alternative_med.jpg',
-      linkText: 'Alternative Medicine'
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Alternative Medicine',
+      doctorRating: '85%'
     },
     {
       thumbnailImg: true,
+      joinDate: '03/07/2021',
+      doctorCategory: 'Anesthesiology',
+      doctorName: 'Juan Dontalio',
+      doctorCountry: 'Puerto Rico',
       linkPath: '/categories/anesthesiology',
-      linkImage: '../../assets/img/site/med_categories/anesthesiology.jpeg',
-      linkText: 'Anesthesiology'
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Anesthesiology',
+      doctorRating: '87%'
     },
     {
       thumbnailImg: true,
+      joinDate: '02/13/2021',
+      doctorCategory: 'Colon and Rectal Surgery',
+      doctorName: 'Pablo Davis',
+      doctorCountry: 'San Lucas',
       linkPath: '/categories/digestive',
-      linkImage: '../../assets/img/site/med_categories/digestive.jpg',
-      linkText: 'Colon and Rectal Surgery'
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Colon and Rectal Surgery',
+      doctorRating: '89%'
     },
     {
       thumbnailImg: true,
-      linkPath: '/categories/dental',
-      linkImage: './assets/img/site/med_categories/dental2.jpg',
-      linkText: 'Dental'
-    },
-    {
-      thumbnailImg: true,
-      linkPath: '/categories/dermatology',
-      linkImage: '../../assets/img/site/med_categories/dermatology.jpeg',
-      linkText: 'Dermatology'
-    },
-    {
-      thumbnailImg: true,
-      linkPath: '/categories/dietitian',
-      linkImage: '../../assets/img/site/med_categories/dietary2.jpg',
-      linkText: 'Dietitian'
-    },
-    {
-      thumbnailImg: true,
-      linkPath: '/categories/emergency-medicine',
-      linkImage: '../../assets/img/site/med_categories/emergency2.jpg',
-      linkText: 'Emergency Medicine'
-    },
-    {
-      thumbnailImg: true,
-      linkPath: '/categories/family-medicine',
-      linkImage: '../../assets/img/site/med_categories/family_med.jpg',
-      linkText: 'Family Medicine'
-    },
-    {
-      thumbnailImg: true,
-      linkPath: '/categories/internal-medicine',
-      linkImage: '../../assets/img/site/med_categories/internal_med.jpg',
-      linkText: 'Internal Medicine'
-    },
-    {
-      thumbnailImg: true,
-      linkPath: '/categories/medical-facilitation',
-      linkImage: '../../assets/img/site/med_categories/med_facilitation.jpg',
-      linkText: 'Medical Facilitation'
-    },
-    {
-      thumbnailImg: true,
-      linkPath: '/categories/genetics',
-      linkImage: '../../assets/img/site/med_categories/genetics2.jpg',
-      linkText: 'Genetics and Genomics'
-    },
-    {
-      thumbnailImg: true,
+      joinDate: '04/11/2021',
+      doctorCategory: 'Cosmetics',
+      doctorName: 'Jesus Doe',
+      doctorCountry: 'Mexico',
       linkPath: '/categories/cosmetics',
-      linkImage: '../../../assets/img/site/doctors/doctor2.jpeg',
-      linkText: 'Cosmetic'
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Cosmetics',
+      doctorRating: '90%'
     },
     {
       thumbnailImg: true,
-      linkPath: '/categories/pharmaceutical',
-      linkImage: '../../assets/img/site/med_categories/pharmaceutical.jpg',
-      linkText: 'Pharmaceutical'
+      joinDate: '01/10/2021',
+      doctorCategory: 'Dental',
+      doctorName: 'Juan Dominique',
+      doctorCountry: 'Mexico',
+      linkPath: '/categories/dental',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Dental',
+      doctorRating: '90%'
     },
     {
       thumbnailImg: true,
+      joinDate: '12/03/2020',
+      doctorCategory: 'Dermatology',
+      doctorName: 'Chuck Davids',
+      doctorCountry: 'Mexico City',
+      linkPath: '/categories/dermatology',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Dermatology',
+      doctorRating: '90%'
+    },
+    {
+      thumbnailImg: true,
+      joinDate: '07/06/2020',
+      doctorCategory: 'Dietitian',
+      doctorName: 'Scott Downs',
+      doctorCountry: 'Mexico',
+      linkPath: '/categories/dietitian',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Dietitian',
+      doctorRating: '82%'
+    },
+    {
+      thumbnailImg: true,
+      joinDate: '10/25/2020',
+      doctorCategory: 'Emergency Medicine',
+      doctorName: 'Paul Donaldson',
+      doctorCountry: 'United States',
+      linkPath: '/categories/emergency-medicine',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Emergency Medicine',
+      doctorRating: '79%'
+    },
+    {
+      thumbnailImg: true,
+      joinDate: '08/14/2020',
+      doctorCategory: 'Family Medicine',
+      doctorName: 'Donna Davidson',
+      doctorCountry: 'Mexico',
+      linkPath: '/categories/family-medicine',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Family Medicine',
+      doctorRating: '90%'
+    },
+    {
+      thumbnailImg: true,
+      joinDate: '07/09/2020',
+      doctorCategory: 'Genetics and Genomics',
+      doctorName: 'Jill Dapherson',
+      doctorCountry: 'United States',
+      linkPath: '/categories/genetics',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Genetics and Genomics',
+      doctorRating: '90%'
+    },
+    {
+      thumbnailImg: true,
+      joinDate: '06/24/2020',
+      doctorCategory: 'Medical Facilitation',
+      doctorName: 'Amy Donnic',
+      doctorCountry: 'Soviet Union',
+      linkPath: '/categories/medical-facilitation',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Medical Facilitation',
+      doctorRating: '86%'
+    },
+    {
+      thumbnailImg: true,
+      joinDate: '03/01/2019',
+      doctorCategory: 'Pharmaceutical',
+      doctorName: 'Paula Scotto',
+      doctorCountry: 'United States',
+      linkPath: '/categories/allergies',
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Pharmaceutical',
+      doctorRating: '90%'
+    },
+    {
+      thumbnailImg: true,
+      joinDate: '03/20/2020',
+      doctorCategory: 'Ophthalmology',
+      doctorName: 'Hans Gunthenroc',
+      doctorCountry: 'Germany',
       linkPath: '/categories/ophthalmology',
-      linkImage: '../../assets/img/site/med_categories/ophthalmology.jpg',
-      linkText: 'Ophthalmology'
+      linkImage: '../../assets/img/site/med_categories/allergies2.jpg',
+      doctorAOP: 'Ophthalmology',
+      doctorRating: '90%'
     }
   ];
   constructor() { }
