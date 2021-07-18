@@ -3,6 +3,7 @@
 
   <section class="how-we-help">
     <ion-grid>
+
       <ion-row>
         <ion-col>
           <ion-card-header>
@@ -15,9 +16,9 @@
       </ion-row>
 
       <ion-row>
-        <ion-card class="how-we-help__content-wrapper">
-          <ion-card-content>
-            <ion-col size-sm>
+        <ion-card >
+          <ion-card-content class="how-we-help__content-wrapper">
+            <ion-col>
               <div class="how-we-help__content-wrapper__col">
                 <i class="fas fa-users fa-7x"></i>
                 <div>
@@ -27,7 +28,7 @@
               </div>
             </ion-col>
 
-            <ion-col size-sm>
+            <ion-col>
               <div class="how-we-help__content-wrapper__col">
                 <i class="fas fa-people-arrows fa-7x"></i>
                 <div>
@@ -37,7 +38,7 @@
               </div>
             </ion-col>
 
-            <ion-col size-sm>
+            <ion-col>
               <div class="how-we-help__content-wrapper__col">
                 <i class="fas fa-user-md fa-7x"></i>
                 <div>
@@ -51,6 +52,7 @@
           </ion-card-content>
         </ion-card>
       </ion-row>
+
     </ion-grid>
   </section>
 
@@ -69,7 +71,7 @@
           <ion-grid>
             <ion-row class="shop-by-department__col--content__row">
               <ion-col class="shop-by-department__col--content__row__cols"
-                       *ngFor="let deps of departments">
+                       *ngFor="let deps of categories">
                 <a routerLink="{{ deps.linkPath }}">
                   <ion-grid>
                     <ion-row>

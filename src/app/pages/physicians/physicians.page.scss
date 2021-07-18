@@ -1,0 +1,77 @@
+.profiles {
+  width: 75%;
+  margin: 8rem auto 2.5rem;
+
+  &__side-categories {
+
+    display: block;
+
+    &__cards {
+      display: block;
+      min-height: 1.9rem;
+      padding: 10px;
+      margin-bottom: 1.5rem;
+
+      &__topic-wrapper{
+
+      }
+    }
+  }
+
+  &__person-info{
+    width: 66%;
+
+    &__card {
+      width: 90%;
+      float: right;
+
+      &__id-wrapper {
+        // display: inline-block;
+        margin-bottom: 3rem;
+        color: #000;
+        padding: 10px;
+        min-height: 15rem;
+
+        &__avatar {
+          display: inline;
+          float: left;
+          padding-right: 3px;
+          width: 25%;
+        }
+
+        &__summary {
+          display: inline;
+          padding: 8px;
+          text-align: justify;
+          float: left;
+
+        }
+
+      }
+
+      &__articles-wrapper:hover {
+        background: #cecece;
+        color: #000;
+
+        & .i {
+          color: #000;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+@media(max-width: 768px) {
+
+  .side__cards {
+    display: none;
+  }
+
+}
+
+
+

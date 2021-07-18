@@ -50,10 +50,12 @@
 
   // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+
+  // row 2
   &__content-wrapper{
     margin-top: 2rem;
     display: grid;
-    grid-template-rows: 2fr;
+    // grid-template-rows: 2fr;
     grid-template-columns: repeat(3, 1fr);
 
     &__col {

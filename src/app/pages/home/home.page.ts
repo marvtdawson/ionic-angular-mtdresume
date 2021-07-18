@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 export class HomePage implements OnInit {
 
   customerSatisfactionImage = '../../assets/img/site/customer_service.jpg';
-  public departments = [
+  public categories = [
     {
       thumbnailImg: true,
       linkPath: '/categories/allergies',
