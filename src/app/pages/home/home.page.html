@@ -2,40 +2,56 @@
   <app-jumbotron></app-jumbotron>
 
   <section class="how-we-help">
-    <ion-card-header>
-      <ion-card-subtitle class="section-headings">
-        <h1>How MedEviews can help</h1>
-        <h5>Making the right medical decisions is important.</h5>
-      </ion-card-subtitle>
-    </ion-card-header>
-    <ion-card>
-      <ion-card-content class="how-we-help__content-wrapper">
-        <ion-col class="how-we-help__content-wrapper__col">
-          <i class="fas fa-users fa-7x"></i>
-          <div>
-            <h3>Join</h3>
-            <p>Register and become apart of our community.</p>
-          </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card-header>
+            <ion-card-subtitle class="section-headings">
+              <h1>How MedEviews can help</h1>
+              <h5>Making the right medical decisions is important.</h5>
+            </ion-card-subtitle>
+          </ion-card-header>
         </ion-col>
+      </ion-row>
 
-        <ion-col class="how-we-help__content-wrapper__col">
-          <i class="fas fa-people-arrows fa-7x"></i>
-          <div>
-            <h3>Connect</h3>
-            <p>Learn what other patients have experienced.</p>
-          </div>
-        </ion-col>
+      <ion-row>
+        <ion-card class="how-we-help__content-wrapper">
+          <ion-card-content>
+            <ion-col size-sm>
+              <div class="how-we-help__content-wrapper__col">
+                <i class="fas fa-users fa-7x"></i>
+                <div>
+                  <h3>Join</h3>
+                  <p>Register and become apart of our community.</p>
+                </div>
+              </div>
+            </ion-col>
 
-        <ion-col class="how-we-help__content-wrapper__col">
-          <i class="fas fa-user-md fa-7x"></i>
-          <div>
-            <h3 class="how-we-help__content-wrapper__col__title">eReviews</h3>
-            <p>Create, read and rank doctor's medical services.</p>
-          </div>
-        </ion-col>
+            <ion-col size-sm>
+              <div class="how-we-help__content-wrapper__col">
+                <i class="fas fa-people-arrows fa-7x"></i>
+                <div>
+                  <h3>Connect</h3>
+                  <p>Learn what other patients have experienced.</p>
+                </div>
+              </div>
+            </ion-col>
 
-      </ion-card-content>
-    </ion-card>
+            <ion-col size-sm>
+              <div class="how-we-help__content-wrapper__col">
+                <i class="fas fa-user-md fa-7x"></i>
+                <div>
+                  <h3 class="how-we-help__content-wrapper__col__title">eReviews</h3>
+                  <p>Create, read and rank doctor's medical services.</p>
+                </div>
+              </div>
+            </ion-col>
+
+
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
   </section>
 
   <!-- show by department -->

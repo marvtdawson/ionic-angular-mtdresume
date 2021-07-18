@@ -1,6 +1,10 @@
 .jumbotron {
   margin-top: 8rem;
 
+  @media(max-width: 768px) {
+    width: 100%;
+  }
+
   & .container {
     max-width: 100%;
     padding-right: 0;
@@ -8,5 +12,9 @@
   }
   &__img {
     width: 100%;
+
+    @media(max-width: 768px) {
+      height: 30rem;
+    }
    }
 }

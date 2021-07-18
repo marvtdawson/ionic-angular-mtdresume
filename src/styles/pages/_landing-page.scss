@@ -46,6 +46,7 @@
 .how-we-help {
   margin: 1rem auto 5rem;
   display: grid;
+  grid-template-rows: repeat(2, 1fr);
 
   // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
