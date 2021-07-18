@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class PricingPage implements OnInit {
 
   pageTitle = 'Pricing';
+
+  cardOneImg = '../../assets/img/site/pricing/silver.jpg';
+  cardTwoImg = '../../assets/img/site/pricing/bronze.jpg';
+  cardThreeImg = '../../assets/img/site/pricing/gold.jpg';
+  cardFourImg = '../../assets/img/site/pricing/titanium.jpg';
+
   constructor() { }
 
   ngOnInit() {

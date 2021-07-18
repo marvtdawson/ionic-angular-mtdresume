@@ -162,12 +162,12 @@
     grid-template-rows: 2fr;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
-
     font-size: 1.2rem;
 
     &__col-1 {
-
       margin-top: 7rem;
+      text-align: center;
+      padding: 9rem 0;
 
       & p {
         font-size: 1.4rem;
@@ -259,8 +259,7 @@
 
       &__col-2 {
         text-align: center;
-        align-content: center;
-        justify-content: center;
+        padding: 9rem 0;
         min-height: 20rem;
 
         & p {
