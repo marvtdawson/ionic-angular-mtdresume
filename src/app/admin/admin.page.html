@@ -1,10 +1,10 @@
 <app-header></app-header>
-<ion-split-pane contentId="main-content" style="margin-top:13.4rem">
-  <ion-menu contentId="main-content" type="overlay">
+<ion-split-pane class="admin-user" contentId="main-content" style="margin-top:10rem">
+  <ion-menu contentId="main-content" type="overlay" class="admin-user__sidenav">
     <ion-content class="main-content">
       <ion-list id="inbox-list">
         <ion-list-header>Manager</ion-list-header>
-        <ion-note> Welcome back {{ loggedInMember }}</ion-note>
+        <ion-note> Welcome Back {{ userFirstName }} {{ userLastName }}!</ion-note>
         <ion-menu-toggle auto-hide="false" *ngFor="let p of adminPages; let i = index">
           <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
                     routerLinkActive="selected">

@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AdminPage implements OnInit {
 
   pageTitle = 'Admin Page';
-  loggedInMember = 'Marvin Dawson';
+  userFirstName = 'Marvin';
+  userLastName = 'Dawson';
 
   public adminPages = [
     {
