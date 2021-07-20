@@ -23,29 +23,29 @@
   </ion-toolbar>
 </ion-header>
 
-
-<ion-row class="header">
-  <ion-col size="4">
+<ion-header class="header">
+  <ion-row>
+  <ion-col size="5">
     <div class="header__logo-text-wrapper">
       <ion-title>
         <div class="header__logo-text-wrapper__logo">
           <a [routerLink]="['/home']">
             <ion-img [src]="appLogo"
-                     alt="MedEviews Logo">
-            </ion-img>
+                     alt="MedEviews Logo"></ion-img>
           </a>
         </div>
-
-        <!--div class="header__logo-text-wrapper__text">
+        <div class="header__logo-text-wrapper__text">
           <a [routerLink]="['/home']">
-            {{ appName }}
+            <div class="header__logo-text-wrapper__text__name">{{ appName | uppercase }}</div>
+            <div class="header__logo-text-wrapper__text__tagline">{{ appTagLine }}</div>
           </a>
-        </div-->
+        </div>
 
       </ion-title>
     </div>
   </ion-col>
-  <ion-col size="3"></ion-col>
+  <ion-col size="2">
+  </ion-col>
   <ion-col size="5">
     <div class="header__nav-wrapper">
       <ion-button fill="clear" color="dark" [routerLink]="['/reviews']"
@@ -115,3 +115,6 @@
     </div>
   </ion-col>
 </ion-row>
+</ion-header>
+
+

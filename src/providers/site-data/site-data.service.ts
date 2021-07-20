@@ -7,8 +7,9 @@ export class SiteDataService {
 
   siteName = 'MedEviews';
   siteFooterName = 'MedEviews LLC';
-  siteTagLine = 'Find A Local Physician';
+  siteTagLine = 'Your Global Medical Provider Network';
   siteLogo = './assets/img/logo/medeviews_logo.jpg';
+  siteLogoNoText = './assets/img/logo/medeviews_logo_no-text.jpg';
   siteKeywords = 'Medical, Reviews, Eviews, Electronic, Views' +
     'Medical Profiles, Physicians, Profiles, medeviews.com, Patients, Patient Reviews' +
     '' +

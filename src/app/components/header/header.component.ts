@@ -12,7 +12,9 @@ export class HeaderComponent implements OnInit {
   dropdown = true;
   accountDropDown = false;
   appName = this.siteData.siteName;
-  appLogo = this.siteData.siteLogo;
+  appLogo = this.siteData.siteLogoNoText;
+  appTagLine = this.siteData.siteTagLine;
+
   isUserLoggedOut$: Observable<boolean>;
   isUserLoggedIn$: Observable<boolean>;
   displayName$: any;
@@ -23,9 +25,7 @@ export class HeaderComponent implements OnInit {
   constructor(private siteData: SiteDataService) {
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {  }
 
   hideDropdown(event) {
     const xTouch = event.clientX;
