@@ -9,6 +9,8 @@ import {Router} from '@angular/router';
 export class BlogPage implements OnInit {
 
   pageTitle = 'Latest News';
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/blog-it.jpg';
+  pageHeaderImgAlt = 'Blog Image';
   articles = [
     {
       blogDate: '03/03/2021',

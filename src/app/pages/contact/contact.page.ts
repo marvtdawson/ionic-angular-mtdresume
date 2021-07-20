@@ -10,10 +10,12 @@ import {unitedStatesServiceList} from '../../../providers/forms/united-states.se
 })
 export class ContactPage implements OnInit {
 
-  pageTitle = 'Contact Us';
+  // pageTitle = 'Contact Us';
   siteName = this.siteData.siteName;
   siteLogo = this.siteData.siteLogo;
   tagLine = this.siteData.siteTagLine;
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/contact.jpg';
+  pageHeaderImgAlt = 'Contact Image';
   stateOptions: any;
   contactForm: FormGroup;
   date = new Date();

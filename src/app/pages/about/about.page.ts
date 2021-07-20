@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AboutPage implements OnInit {
 
   pageTitle = 'About Page';
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/about-mission.jpeg';
+  pageHeaderImgAlt = 'About Our Mission Image';
   constructor() { }
 
   ngOnInit() {

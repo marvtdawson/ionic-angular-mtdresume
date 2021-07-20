@@ -1,3 +1,4 @@
+
 .jumbotron {
   margin-top: 8rem;
 
@@ -14,19 +15,38 @@
       width: 30%;
       position: absolute;
       z-index: 10;
-      margin-top: 7rem;
-      margin-left: 7rem;
+      margin-top: 15rem;
+      margin-left: 10rem;
+      border-radius: 25px;
+
+      @media(max-width: 768px) {
+        width: 90%;
+        position: relative;
+        margin-top: 5rem;
+        margin-left: 0;
+        text-align: center;
+      }
 
       &__wrapper {
 
 
         &__title-text {
+          width: 65%;
+          margin: 0 auto;
+          text-align: center;
+          text-wrap: normal;
+
+          & h1 {
+            color: #fff;
+            font-family: 'Ubuntu';
+          }
 
         }
 
         &__inputs-wrapper {
 
-          background-color: transparent;
+          --ion-background-color: transparent;
+          color: #fff !important;
 
           &--header {
 
@@ -38,11 +58,12 @@
 
     }
 
-    & ion-list{
-      background-color: transparent;
+    & ion-list {
+      --ion-background-color: #545454;
+      opacity: 0.4;
 
-      &  ion-item {
-        background-color: transparent;
+      & ion-item {
+        --ion-background-color: transparent;
       }
     }
 
@@ -55,6 +76,6 @@
     @media(max-width: 768px) {
       height: 30rem;
     }
-   }
+  }
 
 }

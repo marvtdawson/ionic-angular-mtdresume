@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsPage implements OnInit {
 
-  pageTitle = 'Reviews';
+  pageTitle = 'Recent Reviews';
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/reviews.jpg';
+  pageHeaderImgAlt = 'Review It Image';
   constructor() { }
 
   ngOnInit() {

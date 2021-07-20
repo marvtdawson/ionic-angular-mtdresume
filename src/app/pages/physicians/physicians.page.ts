@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PhysiciansPage implements OnInit {
 
   pageTitle = 'Physicians';
+  pageHeaderImg = '../../../assets/img/jumbotron/group_doctors1.jpg';
+  pageHeaderImgAlt = 'Doctor Group Image';
   public doctors = [
     {
       thumbnailImg: true,
