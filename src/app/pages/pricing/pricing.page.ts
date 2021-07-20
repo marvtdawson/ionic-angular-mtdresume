@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PricingPage implements OnInit {
 
   pageTitle = 'Pricing';
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/members.jpg';
+  pageHeaderImgAlt = 'Membership Image';
 
   cardOneImg = '../../assets/img/site/pricing/silver.jpg';
   cardTwoImg = '../../assets/img/site/pricing/bronze.jpg';

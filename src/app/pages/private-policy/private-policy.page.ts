@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PrivatePolicyPage implements OnInit {
 
   pageTitle = 'Private Policy Page';
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/privacy.jpg';
+  pageHeaderImgAlt = 'Privacy Image';
   constructor() { }
 
   ngOnInit() {

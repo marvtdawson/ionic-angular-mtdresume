@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TermsConditionsPage implements OnInit {
 
   pageTitle = 'Terms & Conditions Page';
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/terms.jpg';
+  pageHeaderImgAlt = 'Terms & Conditions Image';
   constructor() { }
 
   ngOnInit() {
