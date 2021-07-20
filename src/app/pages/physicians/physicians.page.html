@@ -1,5 +1,12 @@
 <ion-content>
-<ion-card class="profiles">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <!--video [src]="vidPlayer"></video-->
+      <img src="../../../assets/img/jumbotron/group_doctors1.jpg"
+           class="jumbotron__img" alt="Doctor Image 1">
+    </div>
+  </div>
+  <ion-card class="profiles">
     <ion-card-header>
       <ion-card-title>{{ pageTitle }}</ion-card-title>
     </ion-card-header>
@@ -14,7 +21,7 @@
               <ion-card-content>
                 <div class="profiles__side-categories__cards__topic-wrapper" *ngFor="let cats of doctors">
                   <ion-list lines="none">
-                    <ion-item class="profiles__side-categories__cards__topic-wrapper__link" >
+                    <ion-item class="profiles__side-categories__cards__topic-wrapper__link">
                       <a routerLink="{{ cats.linkPath }}">
                         <ion-label>{{ cats.doctorAOP }}</ion-label>
                       </a>
@@ -43,7 +50,7 @@
 
               </ion-card-header>
               <ion-card-content *ngFor="let docs of doctors">
-                <div class="profiles__person-info__card__id-wrapper" >
+                <div class="profiles__person-info__card__id-wrapper">
                   <div class="profiles__person-info__card__id-wrapper__avatar">
                     <ion-avatar slot="start">
                       <i class="fas fa-user-md fa-9x"></i>
@@ -68,6 +75,6 @@
     </ion-card-content>
   </ion-card>
   <app-footer></app-footer>
-  </ion-content>
+</ion-content>
 
 

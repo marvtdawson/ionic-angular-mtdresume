@@ -9,7 +9,46 @@
     max-width: 100%;
     padding-right: 0;
     padding-left: 0;
+
+    & .homepage-form {
+      width: 30%;
+      position: absolute;
+      z-index: 10;
+      margin-top: 7rem;
+      margin-left: 7rem;
+
+      &__wrapper {
+
+
+        &__title-text {
+
+        }
+
+        &__inputs-wrapper {
+
+          background-color: transparent;
+
+          &--header {
+
+          }
+
+        }
+      }
+
+
+    }
+
+    & ion-list{
+      background-color: transparent;
+
+      &  ion-item {
+        background-color: transparent;
+      }
+    }
+
+
   }
+
   &__img {
     width: 100%;
 
@@ -17,4 +56,5 @@
       height: 30rem;
     }
    }
+
 }

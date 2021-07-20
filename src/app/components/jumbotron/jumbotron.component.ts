@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { VideoPlayer } from '@ionic-native/video-player/ngx';
+import {FormGroup} from '@angular/forms';
+import {SiteDataService} from '../../../providers/site-data/site-data.service';
 
 @Component({
   selector: 'app-jumbotron',
@@ -7,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jumbotron.component.scss'],
 })
 export class JumbotronComponent implements OnInit {
-  // vidPlayer = this.videoPlayer.play('../../assets/videos/home_page.mov')
-  //   .then()
-  //   .catch(err => {
-  //     console.log(err);
-  //   });
-  constructor() { }
+  siteTagLine = this.siteData.siteTagLine;
+  pageHeaderImg = '../../assets/img/site/pageHeaders/plane-in-flight.jpg';
+  searchForm: FormGroup;
+  constructor(private siteData: SiteDataService) { }
 
   ngOnInit() {
   }
+
+  onSubmit() {}
 
 }

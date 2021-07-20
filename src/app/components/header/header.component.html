@@ -25,7 +25,7 @@
 
 <ion-header class="header">
   <ion-row>
-  <ion-col size="5">
+  <ion-col size="4">
     <div class="header__logo-text-wrapper">
       <ion-title>
         <div class="header__logo-text-wrapper__logo">
@@ -46,19 +46,20 @@
   </ion-col>
   <ion-col size="2">
   </ion-col>
-  <ion-col size="5">
+  <ion-col size="6">
     <div class="header__nav-wrapper">
+      <ion-button fill="clear" color="dark" [routerLink]="['/physicians']"
+                                                 routerLinkActive="active-item"
+                                                 [routerLinkActiveOptions]="{exact: true}">Physicians
+    </ion-button>
       <ion-button fill="clear" color="dark" [routerLink]="['/reviews']"
                   routerLinkActive="active-item"
                   [routerLinkActiveOptions]="{exact: true}">Reviews
       </ion-button>
-      <ion-button fill="clear" color="dark" [routerLink]="['/physicians']"
+
+      <ion-button fill="clear" color="dark" [routerLink]="['/about']"
                   routerLinkActive="active-item"
-                  [routerLinkActiveOptions]="{exact: true}">Physicians
-      </ion-button>
-      <ion-button fill="clear" color="dark" [routerLink]="['/patients']"
-                  routerLinkActive="active-item"
-                  [routerLinkActiveOptions]="{exact: true}">Patients
+                  [routerLinkActiveOptions]="{exact: true}">How It Works
       </ion-button>
       <!--<ion-button #eventsBtn (mouseenter)="dropdown=true" (mouseleave)="hideDropdown($event)"
                   fill="clear" color="dark" class="dropdown-btn"

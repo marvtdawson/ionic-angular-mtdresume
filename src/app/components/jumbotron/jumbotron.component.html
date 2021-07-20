@@ -1,8 +1,34 @@
 <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <!--video [src]="vidPlayer"></video-->
-    <img src="../../../assets/img/jumbotron/group_doctors1.jpg"
-         class="jumbotron__img" alt="Doctor Image 1">
-  </div>
+  <ion-grid>
+    <ion-row class="container">
+      <ion-img [src]=pageHeaderImg></ion-img>
+      <ion-col class="homepage-form">
+        <div class="homepage-form_wrapper">
+          <div class="homepage-form__wrapper__title-text">
+            <h1>{{ siteTagLine }}</h1>
+          </div>
+          <div class="homepage-form__wrapper__inputs-wrapper">
+            <ion-list>
+              <ion-item class="homepage-form__wrapper__inputs-wrapper--header">
+                <ion-label>Start Searching Medical Professionals Here</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>What do you need:</ion-label>
+                <ion-input type="text" placeholder="Search By Category"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label>Search By Location:</ion-label>
+                <ion-input type="text" placeholder="City or Postal Code"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-button type="submit">Search Now</ion-button>
+              </ion-item>
+            </ion-list>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </div>
 
