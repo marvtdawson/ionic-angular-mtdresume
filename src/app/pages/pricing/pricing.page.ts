@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PricingPage implements OnInit {
 
   pageTitle = 'Pricing';
-  pageHeaderImg = '../../../assets/img/site/pageHeaders/members.jpg';
+  pageHeaderImg = '../../../assets/img/site/pageHeaders/membership.jpg';
   pageHeaderImgAlt = 'Membership Image';
 
   cardOneImg = '../../assets/img/site/pricing/silver.jpg';
