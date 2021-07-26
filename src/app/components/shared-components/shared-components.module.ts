@@ -5,9 +5,8 @@ import {HeaderComponent} from '../header/header.component';
 import {IonicModule} from '@ionic/angular';
 import {RouterModule} from '@angular/router';
 import {JumbotronComponent} from '../jumbotron/jumbotron.component';
-import {ReactiveFormsModule} from "@angular/forms";
-
-
+import {ReactiveFormsModule} from '@angular/forms';
+// import {TabsPageModule} from '../../tabs/tabs.module';
 
 @NgModule({
   declarations: [FooterComponent, HeaderComponent, JumbotronComponent],
@@ -15,7 +14,8 @@ import {ReactiveFormsModule} from "@angular/forms";
         CommonModule,
         IonicModule,
         RouterModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        // TabsPageModule
     ],
   exports: [FooterComponent, HeaderComponent, JumbotronComponent]
 })
