@@ -96,6 +96,10 @@ const routes: Routes = [
         loadChildren: () => import('../pricing/pricing.module').then( m => m.PricingPageModule)
       },
       {
+        path: 'booking',
+        loadChildren: () => import('../booking/booking.module').then( m => m.BookingPageModule)
+      },
+      {
         path: 'categories',
         loadChildren: () => import('../../categories/categories.module').then(m => m.CategoriesPageModule),
         children: [
