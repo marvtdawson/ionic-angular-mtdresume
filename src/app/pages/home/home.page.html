@@ -108,7 +108,8 @@
       <ion-card-content class="doctor__content-wrapper">
         <ion-grid>
           <ion-col class="doctor__content-wrapper_col-1" >
-            <ion-button expand="block" class="doctor__content-wrapper_col-1__btn">Learn More</ion-button>
+            <ion-button expand="block" class="doctor__content-wrapper_col-1__btn" (click)="openRegisterModal()">
+              Learn More</ion-button>
           </ion-col>
         </ion-grid>
       </ion-card-content>
@@ -161,9 +162,9 @@
       <ion-card-content class="green-communication__content-wrapper">
         <ion-row class="green-communication__content-wrapper__row-1">
           <ion-col class="green-communication__content-wrapper__row-1__col-1 composition">
-            <i class="fas fa-car fa-9x"></i>
-            <i class="fas fa-plane-departure fa-9x"></i>
-            <i class="fas fa-hotel fa-9x"></i>
+            <i class="fas fa-car fa-9x composition__photo composition__photo--p1"></i>
+            <i class="fas fa-plane-departure fa-9x composition__photo composition__photo--p2"></i>
+            <i class="fas fa-hotel fa-9x composition__photo composition__photo--p3"></i>
           </ion-col>
           <ion-col class="green-communication_content-wrapper__row-1__col-2">
             <div class="col-1-of-2">

@@ -1,6 +1,7 @@
 .composition {
   position: relative;
   margin-top: 1.5rem;
+  font-size: 2rem;
 
   &__photo {
     width: 25%;
@@ -11,26 +12,30 @@
     transition: all .2s;
     outline-offset: 1rem;
 
+    // car
     &--p1{
       right: 0;
-      top: -2px;
+      top: -2rem;
     }
 
+    // plane
     &--p2{
-      left: 7rem;
-      top: 2rem;
+      left: 25rem;
+      top: -1.5rem;
     }
 
+    // hotel
     &--p3{
       right: 20%;
       top: 3rem;
     }
 
     &:hover{
-      outline: 0.3rem solid green;
+      outline: 0.3rem solid blue;
       transform: scale(1.05) translate(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 20;
+      color: darkgreen;
     }
   }
 
