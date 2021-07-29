@@ -19,7 +19,7 @@
 .green-communication,
 .value-perception,
 .founding-member,
-.parking,
+.doctor,
 .laundry,
 .shop-by-department {
   @extend %section-default;
@@ -303,7 +303,33 @@
 }
 
 /* parking */
-.parking {}
+.doctor {
+
+  &__content-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+
+    &__col-1 {
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+
+      &__btn {
+        width: 30%;
+        margin: 1.2rem auto;
+
+        &:hover {
+          color: green;
+          background-color: #FFF;
+          font-weight: bold;
+          border: 0.2rem solid black;
+        }
+      }
+    }
+  }
+
+}
 
 /* laundry */
 .laundry {}
