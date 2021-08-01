@@ -74,9 +74,15 @@
                   <ion-grid>
                     <ion-row>
                       <ion-col>
-                        <div class="shop-by-department__col--content__row__cols__img">
-                          <img class="shop-by-department--col__content__row__cols__img__size"
-                               src="{{ deps.linkImage }}" alt="{{ deps.linkText }}">
+                        <div class="shop-by-department__col--content__row__cols__img-wrapper">
+                            <img class="shop-by-department--col__content__row__cols__img-wrapper__size"
+                                 src="{{ deps.linkImage }}" alt="{{ deps.linkText }}">
+                            <span class="shop-by-department__col--content__row__cols__img-wrapper__info
+                          pic-caption
+                          bottom-to-top">
+                            <h3>{{ deps.linkText }}</h3>
+                             <a href="{{ deps.linkPath}}">View Category</a>
+                          </span>
                         </div>
                       </ion-col>
                     </ion-row>

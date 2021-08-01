@@ -141,18 +141,46 @@
             }
           }
 
-          &__img {
-            max-height: 150px;
+          &__img-wrapper {
+            max-height: 170px;
             box-shadow: 3px 3px 5px #4e4e4e;
 
             &__size {
               max-height: 150px;
             }
+
+            & .pic-caption {
+              top: 105px;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              padding: 0 10px 15px;
+              text-align: center;
+            }
+
+            &__info {
+
+              transition: 0.5s;
+              transform: translateY(100%);
+
+              & a {
+                //transition: 0.5s;
+                //transform: translateY(100%);
+              }
+
+              & h3 {
+                transition: 0.5s;
+                transform: translateY(-100%);
+              }
+            }
+
+            &__img-wrapper:hover &__info,
+            &__img-wrapper:hover h3 {
+              transform: translateY(0);
+            }
           }
         }
-
       }
-
     }
   }
 
