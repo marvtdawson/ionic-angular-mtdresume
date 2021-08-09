@@ -9,18 +9,112 @@
     max-width: 100%;
     padding-right: 0;
     padding-left: 0;
+  }
+  &__img {
+    width: 100%;
 
-    &__img {
-      width: 100%;
+    @media(max-width: 768px) {
+      height: 30rem;
+    }
+  }
+}
 
-      @media(max-width: 768px) {
-        height: 30rem;
+.profiles {
+  width: 75%;
+  margin: 8rem auto 2.5rem;
+
+  &__side-categories {
+
+    display: block;
+
+    &__cards {
+      display: block;
+      min-height: 1.9rem;
+      padding: 10px;
+      margin-bottom: 1.5rem;
+
+      &__topic-wrapper{
+
+        &__link {
+
+          & a {
+            text-decoration: none;
+          }
+
+        }
+
+        &_link:hover{
+          background: #4f5050;
+        }
+
+      }
+
+
+    }
+  }
+
+  &__person-info{
+    width: 66%;
+
+    &__card {
+      width: 90%;
+      float: right;
+
+      &__id-wrapper {
+        // display: inline-block;
+        margin-bottom: 3rem;
+        color: #000;
+        padding: 5px;
+        min-height: 18rem;
+
+        &__avatar {
+          display: inline;
+          float: left;
+          // padding-right: 3px;
+          width: 25%;
+
+          & .fas{
+            margin-top: 1rem;
+          }
+        }
+
+        &__summary {
+          display: inline;
+          padding: 5px;
+          // text-align: justify;
+          float: left;
+
+        }
+
+      }
+
+      &__id-wrapper:hover {
+        background: #cecece;
+        color: #000;
+
+        & .i {
+          color: #000;
+        }
       }
     }
-
   }
 
 }
+
+
+
+
+@media(max-width: 768px) {
+
+  .side__cards {
+    display: none;
+  }
+
+}
+
+
+
+
 
 .main-core-page-card {
   margin-top: 2rem;

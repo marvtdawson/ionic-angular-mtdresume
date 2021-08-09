@@ -27,11 +27,11 @@
     // hotel
     &--p3{
       right: 20%;
-      top: 3rem;
+      top: 3.5rem;
     }
 
     &:hover{
-      outline: 0.3rem solid blue;
+      outline: 0.3rem solid rgba(127, 127, 127, 0.41);
       transform: scale(1.05) translate(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 20;

@@ -9,7 +9,66 @@
       <ion-card-title>{{ pageTitle }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" class="profiles__side-categories">
+            <ion-card class="profiles__side-categories__cards">
+              <ion-card-header>
+                <ion-card-title>Medical Categories</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <div class="profiles__side-categories__cards__topic-wrapper" *ngFor="let cats of doctors">
+                  <ion-list lines="none">
+                    <ion-item class="profiles__side-categories__cards__topic-wrapper__link">
+                      <a routerLink="{{ cats.linkPath }}">
+                        <ion-label>{{ cats.doctorAOP }}</ion-label>
+                      </a>
+                    </ion-item>
+                  </ion-list>
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
 
+          <ion-col size="8" class="profiles__person-info">
+            <ion-card class="profiles__person-info__card">
+              <ion-card-header>
+                <ion-card-title>
+                  Recent Reviews
+                </ion-card-title>
+                <ion-item>
+                  <ion-label>Filter By:</ion-label>
+                  <ion-select>
+                    <ion-select-option value="Country">Country</ion-select-option>
+                    <ion-select-option value="Date">Date</ion-select-option>
+                    <ion-select-option value="Rating">Rating</ion-select-option>
+                  </ion-select>
+                </ion-item>
+
+              </ion-card-header>
+              <ion-card-content *ngFor="let docs of doctors">
+                <div class="profiles__person-info__card__id-wrapper">
+                  <div class="profiles__person-info__card__id-wrapper__avatar">
+                    <ion-avatar slot="start">
+                      <i class="fad fa-user fa-9x"></i>
+                    </ion-avatar>
+                  </div>
+                  <div class="profiles__person-info__card__id-wrapper__summary">
+                    <h2>Name: {{ docs.doctorName }}</h2>
+                    <h2>Country: {{ docs.doctorCountry }}</h2>
+                    <p>Recent Reviewed Area: {{ docs.doctorAOP }} </p>
+                    <p>Reviews: {{ docs.doctorRating }} </p>
+                    <p>Joined: {{ docs.joinDate }}</p>
+                    <ion-button slot="end">View Profile</ion-button>
+                  </div>
+                </div>
+              </ion-card-content>
+
+            </ion-card>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-content>
   </ion-card>
   <app-footer></app-footer>
