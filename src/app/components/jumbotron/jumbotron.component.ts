@@ -9,7 +9,7 @@ import {SiteDataService} from '../../../providers/site-data/site-data.service';
 })
 export class JumbotronComponent implements OnInit {
   siteTagLine = this.siteData.siteTagLine;
-  pageHeaderImg = '../../assets/img/site/pageHeaders/plane-in-flight.jpg';
+  pageHeaderImg = '../../assets/img/site/pageHeaders/dallas1_cropped.jpg';
   searchForm: FormGroup;
   constructor(private siteData: SiteDataService) { }
 

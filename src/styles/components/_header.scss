@@ -1,24 +1,28 @@
-@import 'src/styles/base/_base.scss';
+@import '../base/base';
+@import '../abstract/variables';
 
 ion-header, ion-toolbar, ion-title {
-  background: #ffffff;
+  background: $background-color;
 }
 
 @media(min-width: 768px) {
   .mobile-header {
     display: none;
+    background: $background-color;
   }
 
   .header {
     display: flex;
-    background: #ffffff;
+    background: $background-color;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 2rem;
+    width: 100%;
 
 
     &__logo-text-wrapper {
       display: block;
+      width: 100%;
 
       &__logo {
         display: block;
@@ -34,21 +38,23 @@ ion-header, ion-toolbar, ion-title {
         float: left;
         margin-top: 0;
         margin-left: 7px;
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Nunito,sans-serif', serif;
+
+        &__name {
+          text-decoration: none;
+          width: 100%;
+        }
 
 
         & a {
           text-decoration: none;
+
+
+
+          &__tagline {
+            font-size: 1.2rem;
+          }
         }
-
-        &__name {
-
-        }
-
-        &__tagline {
-          font-size: 1.2rem;
-        }
-
 
       }
     }
@@ -67,9 +73,15 @@ ion-header, ion-toolbar, ion-title {
   .mobile-header {
     display: block;
     max-height: 84px;
+    background: $background-color;
 
     & ion-toolbar {
-      // --ion-border-color: none;
+      --ion-border-color: none;
+      background: $background-color;
+
+      & .toolbar-background {
+        background: var(--ion-background-color, $background-color);
+      }
     }
 
     & ion-button {
@@ -99,7 +111,7 @@ ion-header, ion-toolbar, ion-title {
 .dropdown {
   // width: 7.2rem;
   // height: 8rem;
-  background: #FFFFFF;
+  background: $background-color;
   position: absolute;
   top: 3.3rem;
   left: 275px;
@@ -112,7 +124,7 @@ ion-header, ion-toolbar, ion-title {
 .account-dropdown {
   // width: 7.2rem;
   // height: 8rem;
-  background: #FFFFFF;
+  background: $background-color;
   position: absolute;
   top: 3.9rem;
   left: 510px;

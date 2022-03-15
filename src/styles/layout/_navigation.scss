@@ -1,8 +1,6 @@
 @import 'src/styles/base/_base.scss';
 
-ion-header, ion-toolbar, ion-title {
-  background-color: #FFffff;
-}
+
 
 ion-header {
 
@@ -20,7 +18,7 @@ ion-header {
 ion-toolbar {
     width: 100%;
     margin: -10 auto;
-    background-color: #FFffff;
+    background-color: #ffffff;
 
     // 1024px
     @media only screen and (max-width: $bp-larger-1024) {
@@ -33,7 +31,7 @@ ion-toolbar {
 
     & ion-buttons {
 
-      background-color: #FFffff;
+      background-color: #ffffff;
 
       @media only screen and (max-width: $bp-medium) {
         display: block;

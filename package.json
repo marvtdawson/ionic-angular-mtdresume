@@ -1,9 +1,9 @@
 {
-  "name": "medviews2021",
+  "name": "marvintdawson",
   "version": "0.0.1",
-  "author": "MedEviews",
-  "homepage": "https://www.medeviews.com/",
-  "description": "The MedEviews Site",
+  "author": "Marvin Dawson",
+  "homepage": "https://www.marvintdawson.com/",
+  "description": "The Marvin T. Dawson Site",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

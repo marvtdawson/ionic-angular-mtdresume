@@ -4,7 +4,7 @@
       <ion-menu-button menu="myMenu"></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ pageTitle }}</ion-title>
-    <ion-buttons>
+    <!--ion-buttons>
       <ion-button>
         <a [routerLink]="['/home']">
           <ion-img class="mobile-header__logo-img" [src]="appLogo"
@@ -12,7 +12,7 @@
           </ion-img>
         </a>
       </ion-button>
-    </ion-buttons>
+    </ion-buttons-->
     <ion-buttons slot="end">
       <ion-button>
         <a [routerLink]="['/admin']" routerLinkActive="active-item" [routerLinkActiveOptions]="{exact: true}">
@@ -28,12 +28,12 @@
     <ion-col size="3">
       <div class="header__logo-text-wrapper">
         <ion-title>
-          <div class="header__logo-text-wrapper__logo">
+          <!--div class="header__logo-text-wrapper__logo">
             <a [routerLink]="['/home']">
               <ion-img [src]="appLogo"
                        alt="MedEviews Logo"></ion-img>
             </a>
-          </div>
+          </div-->
           <div class="header__logo-text-wrapper__text">
             <a [routerLink]="['/home']">
               <div class="header__logo-text-wrapper__text__name">{{ appName | uppercase }}</div>
@@ -49,50 +49,19 @@
 
     <ion-col size="7">
       <div class="header__nav-wrapper">
-        <ion-button fill="clear" color="dark" [routerLink]="['/physicians']"
+        <ion-button fill="clear" color="dark" [routerLink]="['/about']"
                     routerLinkActive="active-item"
-                    [routerLinkActiveOptions]="{exact: true}">Physicians
+                    [routerLinkActiveOptions]="{exact: true}">About
         </ion-button>
         <ion-button fill="clear" color="dark" [routerLink]="['/reviews']"
                     routerLinkActive="active-item"
-                    [routerLinkActiveOptions]="{exact: true}">Reviews
+                    [routerLinkActiveOptions]="{exact: true}">Consulting
         </ion-button>
 
         <ion-button fill="clear" color="dark" [routerLink]="['/about']"
                     routerLinkActive="active-item"
-                    [routerLinkActiveOptions]="{exact: true}">How It Works
+                    [routerLinkActiveOptions]="{exact: true}">Work
         </ion-button>
-        <!--<ion-button #eventsBtn (mouseenter)="dropdown=true" (mouseleave)="hideDropdown($event)"
-                    fill="clear" color="dark" class="dropdown-btn"
-                    [routerLink]="['/events']"
-                    routerDirection="root"
-                    routerLinkActive="active-item"
-                    [routerLinkActiveOptions]="{exact: true}">
-          Events
-          <ion-icon slot="end" [name]="dropdown ? 'chevron-down' : 'chevron-up'"></ion-icon>
-        </ion-button>
-        <div *ngIf="dropdown" class="dropdown"
-             (mouseleave)="dropdown = false" #dropdownbox>
-          <ion-item button (click)="dropdown = false" [routerLink]="['/events/new-events']"
-
-                    lines="none" routerDirection="root">
-            New
-          </ion-item>
-          <ion-item button (click)="dropdown = false" [routerLink]="['/events/previous-events']"
-                    lines="none" routerDirection="root">
-            Previous
-          </ion-item>
-        </div>-->
-
-        <ion-button fill="clear" color="dark" [routerLink]="['/blog']"
-                    routerLinkActive="active-item"
-                    [routerLinkActiveOptions]="{exact: true}">Latest News
-        </ion-button>
-        <!--<ion-button fill="clear" color="dark" [routerLink]="['/cart']"
-                    routerLinkActive="active-item"
-                    [routerLinkActiveOptions]="{exact: true}">Cart
-        </ion-button>-->
-
         <ion-button #accountBtn (mouseenter)="accountDropDown=true" (mouseleave)="hideDropdown($event)"
                     fill="clear" color="dark" class="dropdown-btn"
                     [routerLink]="['/admin']"
@@ -116,7 +85,6 @@
         </div>
       </div>
     </ion-col>
-
   </ion-row>
 </ion-header>
 

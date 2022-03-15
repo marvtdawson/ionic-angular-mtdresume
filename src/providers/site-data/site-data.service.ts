@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class SiteDataService {
 
-  siteName = 'MedEviews';
-  siteFooterName = 'MedEviews LLC';
-  siteTagLine = 'Your Global Medical Provider Network';
+  siteName = 'Marvin T. Dawson';
+  siteFooterName = 'Marvin T Dawson';
+  siteTagLine = 'Sr. Full Stack Software Engineer';
   siteLogo = './assets/img/logo/medeviews_logo.jpg';
   siteLogoNoText = './assets/img/logo/medeviews_logo_no-text.jpg';
   siteKeywords = 'Medical, Reviews, Eviews, Electronic, Views' +

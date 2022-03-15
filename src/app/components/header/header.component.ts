@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   dropdown = true;
   accountDropDown = false;
   appName = this.siteData.siteName;
-  appLogo = this.siteData.siteLogoNoText;
+  // appLogo = this.siteData.siteLogoNoText;
   appTagLine = this.siteData.siteTagLine;
 
   isUserLoggedOut$: Observable<boolean>;
